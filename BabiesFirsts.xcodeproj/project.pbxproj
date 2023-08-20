@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		453BB95C2A923F330014E569 /* animation_llje5kir.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB9582A923F330014E569 /* animation_llje5kir.json */; };
+		453BB95D2A923F330014E569 /* animation_lljeem0y.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB9592A923F330014E569 /* animation_lljeem0y.json */; };
+		453BB95E2A923F330014E569 /* animation_llje9w3w.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95A2A923F330014E569 /* animation_llje9w3w.json */; };
+		453BB95F2A923F330014E569 /* animation_llje844a.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95B2A923F330014E569 /* animation_llje844a.json */; };
+		453BB9612A923FDA0014E569 /* hello.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB9602A923FDA0014E569 /* hello.json */; };
+		454E2CD52A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */; };
+		454E2CD72A8C6F7D00D2FDE0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */; };
+		454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */; };
+		454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		453BB9582A923F330014E569 /* animation_llje5kir.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje5kir.json; sourceTree = "<group>"; };
+		453BB9592A923F330014E569 /* animation_lljeem0y.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_lljeem0y.json; sourceTree = "<group>"; };
+		453BB95A2A923F330014E569 /* animation_llje9w3w.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje9w3w.json; sourceTree = "<group>"; };
+		453BB95B2A923F330014E569 /* animation_llje844a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje844a.json; sourceTree = "<group>"; };
+		453BB9602A923FDA0014E569 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
+		454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabiesFirsts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabiesFirstsApp.swift; sourceTree = "<group>"; };
+		454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		454E2CCE2A8C6F7D00D2FDE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		453BB9572A923F090014E569 /* Lottie Animation Files */ = {
+			isa = PBXGroup;
+			children = (
+				453BB9602A923FDA0014E569 /* hello.json */,
+				453BB9582A923F330014E569 /* animation_llje5kir.json */,
+				453BB95A2A923F330014E569 /* animation_llje9w3w.json */,
+				453BB95B2A923F330014E569 /* animation_llje844a.json */,
+				453BB9592A923F330014E569 /* animation_lljeem0y.json */,
+			);
+			path = "Lottie Animation Files";
+			sourceTree = "<group>";
+		};
+		453BB9682A924C780014E569 /* Lottie Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Lottie Extensions";
+			sourceTree = "<group>";
+		};
+		454E2CC82A8C6F7D00D2FDE0 = {
+			isa = PBXGroup;
+			children = (
+				454E2CD32A8C6F7D00D2FDE0 /* BabiesFirsts */,
+				454E2CD22A8C6F7D00D2FDE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		454E2CD22A8C6F7D00D2FDE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		454E2CD32A8C6F7D00D2FDE0 /* BabiesFirsts */ = {
+			isa = PBXGroup;
+			children = (
+				453BB9682A924C780014E569 /* Lottie Extensions */,
+				453BB9572A923F090014E569 /* Lottie Animation Files */,
+				454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */,
+				454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */,
+				454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */,
+				454E2CDA2A8C6F7E00D2FDE0 /* Preview Content */,
+			);
+			path = BabiesFirsts;
+			sourceTree = "<group>";
+		};
+		454E2CDA2A8C6F7E00D2FDE0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		454E2CD02A8C6F7D00D2FDE0 /* BabiesFirsts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454E2CDF2A8C6F7E00D2FDE0 /* Build configuration list for PBXNativeTarget "BabiesFirsts" */;
+			buildPhases = (
+				454E2CCD2A8C6F7D00D2FDE0 /* Sources */,
+				454E2CCE2A8C6F7D00D2FDE0 /* Frameworks */,
+				454E2CCF2A8C6F7D00D2FDE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabiesFirsts;
+			packageProductDependencies = (
+			);
+			productName = BabiesFirsts;
+			productReference = 454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		454E2CC92A8C6F7D00D2FDE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					454E2CD02A8C6F7D00D2FDE0 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 454E2CCC2A8C6F7D00D2FDE0 /* Build configuration list for PBXProject "BabiesFirsts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 454E2CC82A8C6F7D00D2FDE0;
+			packageReferences = (
+			);
+			productRefGroup = 454E2CD22A8C6F7D00D2FDE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				454E2CD02A8C6F7D00D2FDE0 /* BabiesFirsts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		454E2CCF2A8C6F7D00D2FDE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453BB95D2A923F330014E569 /* animation_lljeem0y.json in Resources */,
+				453BB95C2A923F330014E569 /* animation_llje5kir.json in Resources */,
+				453BB9612A923FDA0014E569 /* hello.json in Resources */,
+				453BB95F2A923F330014E569 /* animation_llje844a.json in Resources */,
+				453BB95E2A923F330014E569 /* animation_llje9w3w.json in Resources */,
+				454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */,
+				454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		454E2CCD2A8C6F7D00D2FDE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454E2CD72A8C6F7D00D2FDE0 /* WelcomeView.swift in Sources */,
+				454E2CD52A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		454E2CDD2A8C6F7E00D2FDE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		454E2CDE2A8C6F7E00D2FDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		454E2CE02A8C6F7E00D2FDE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BabiesFirsts/Preview Content\"";
+				DEVELOPMENT_TEAM = 76KA23L295;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.BabiesFirsts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		454E2CE12A8C6F7E00D2FDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BabiesFirsts/Preview Content\"";
+				DEVELOPMENT_TEAM = 76KA23L295;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.BabiesFirsts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		454E2CCC2A8C6F7D00D2FDE0 /* Build configuration list for PBXProject "BabiesFirsts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454E2CDD2A8C6F7E00D2FDE0 /* Debug */,
+				454E2CDE2A8C6F7E00D2FDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454E2CDF2A8C6F7E00D2FDE0 /* Build configuration list for PBXNativeTarget "BabiesFirsts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454E2CE02A8C6F7E00D2FDE0 /* Debug */,
+				454E2CE12A8C6F7E00D2FDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 454E2CC92A8C6F7D00D2FDE0 /* Project object */;
+}
