@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WelcomeView: View {
   var body: some View {
-    LottieView(animation: .named("hello"))
+    LottieView(animation: .named("wave-hand"))
       .looping()
       .frame(maxWidth: 100)
     .padding()

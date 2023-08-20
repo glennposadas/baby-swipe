@@ -1,0 +1,22 @@
+PODS:
+  - lottie-ios (4.2.0)
+
+DEPENDENCIES:
+  - lottie-ios (from `https://github.com/airbnb/lottie-ios`, branch `master`)
+
+EXTERNAL SOURCES:
+  lottie-ios:
+    :branch: master
+    :git: https://github.com/airbnb/lottie-ios
+
+CHECKOUT OPTIONS:
+  lottie-ios:
+    :commit: 80d7e9a81149a450b0ef96d0b856d1da1be06393
+    :git: https://github.com/airbnb/lottie-ios
+
+SPEC CHECKSUMS:
+  lottie-ios: c232ec961d60b701a352475b48474d87a8f27444
+
+PODFILE CHECKSUM: 68b105aeeda3ae0bb81e17c9ee211d625af35ba7
+
+COCOAPODS: 1.11.3

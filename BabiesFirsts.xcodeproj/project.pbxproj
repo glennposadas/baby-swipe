@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4538D9612A92BB0C008D6CBA /* hi-word.json in Resources */ = {isa = PBXBuildFile; fileRef = 4538D95F2A92BB0C008D6CBA /* hi-word.json */; };
+		4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 4538D9602A92BB0C008D6CBA /* wave-hand.json */; };
 		453BB95C2A923F330014E569 /* animation_llje5kir.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB9582A923F330014E569 /* animation_llje5kir.json */; };
 		453BB95D2A923F330014E569 /* animation_lljeem0y.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB9592A923F330014E569 /* animation_lljeem0y.json */; };
 		453BB95E2A923F330014E569 /* animation_llje9w3w.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95A2A923F330014E569 /* animation_llje9w3w.json */; };
 		453BB95F2A923F330014E569 /* animation_llje844a.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95B2A923F330014E569 /* animation_llje844a.json */; };
-		453BB9612A923FDA0014E569 /* hello.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB9602A923FDA0014E569 /* hello.json */; };
 		454E2CD52A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */; };
 		454E2CD72A8C6F7D00D2FDE0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */; };
 		454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */; };
 		454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */; };
+		773E8CB47129021F8D4B517E /* Pods_BabiesFirsts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32BD4E9FCC50A5DA4B3C522 /* Pods_BabiesFirsts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0382E36961EF7454D2DAB3B8 /* Pods-BabiesFirsts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.debug.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.debug.xcconfig"; sourceTree = "<group>"; };
+		4538D95F2A92BB0C008D6CBA /* hi-word.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "hi-word.json"; sourceTree = "<group>"; };
+		4538D9602A92BB0C008D6CBA /* wave-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wave-hand.json"; sourceTree = "<group>"; };
 		453BB9582A923F330014E569 /* animation_llje5kir.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje5kir.json; sourceTree = "<group>"; };
 		453BB9592A923F330014E569 /* animation_lljeem0y.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_lljeem0y.json; sourceTree = "<group>"; };
 		453BB95A2A923F330014E569 /* animation_llje9w3w.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje9w3w.json; sourceTree = "<group>"; };
 		453BB95B2A923F330014E569 /* animation_llje844a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje844a.json; sourceTree = "<group>"; };
-		453BB9602A923FDA0014E569 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
 		454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabiesFirsts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabiesFirstsApp.swift; sourceTree = "<group>"; };
 		454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.release.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.release.xcconfig"; sourceTree = "<group>"; };
+		B32BD4E9FCC50A5DA4B3C522 /* Pods_BabiesFirsts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabiesFirsts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773E8CB47129021F8D4B517E /* Pods_BabiesFirsts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +52,8 @@
 		453BB9572A923F090014E569 /* Lottie Animation Files */ = {
 			isa = PBXGroup;
 			children = (
-				453BB9602A923FDA0014E569 /* hello.json */,
+				4538D95F2A92BB0C008D6CBA /* hi-word.json */,
+				4538D9602A92BB0C008D6CBA /* wave-hand.json */,
 				453BB9582A923F330014E569 /* animation_llje5kir.json */,
 				453BB95A2A923F330014E569 /* animation_llje9w3w.json */,
 				453BB95B2A923F330014E569 /* animation_llje844a.json */,
@@ -66,6 +74,8 @@
 			children = (
 				454E2CD32A8C6F7D00D2FDE0 /* BabiesFirsts */,
 				454E2CD22A8C6F7D00D2FDE0 /* Products */,
+				AF9DCCFB3E8F88FF57044DC9 /* Pods */,
+				89CECDC2FC9C5B07B0B831C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +108,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		89CECDC2FC9C5B07B0B831C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B32BD4E9FCC50A5DA4B3C522 /* Pods_BabiesFirsts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF9DCCFB3E8F88FF57044DC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0382E36961EF7454D2DAB3B8 /* Pods-BabiesFirsts.debug.xcconfig */,
+				913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,17 +132,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 454E2CDF2A8C6F7E00D2FDE0 /* Build configuration list for PBXNativeTarget "BabiesFirsts" */;
 			buildPhases = (
+				D529F2360C5DABEB3E9C983B /* [CP] Check Pods Manifest.lock */,
 				454E2CCD2A8C6F7D00D2FDE0 /* Sources */,
 				454E2CCE2A8C6F7D00D2FDE0 /* Frameworks */,
 				454E2CCF2A8C6F7D00D2FDE0 /* Resources */,
+				325D515CFD84AD66AE069ACE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BabiesFirsts;
-			packageProductDependencies = (
-			);
 			productName = BabiesFirsts;
 			productReference = 454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */;
 			productType = "com.apple.product-type.application";
@@ -144,8 +171,6 @@
 				Base,
 			);
 			mainGroup = 454E2CC82A8C6F7D00D2FDE0;
-			packageReferences = (
-			);
 			productRefGroup = 454E2CD22A8C6F7D00D2FDE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,9 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4538D9612A92BB0C008D6CBA /* hi-word.json in Resources */,
+				4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */,
 				453BB95D2A923F330014E569 /* animation_lljeem0y.json in Resources */,
 				453BB95C2A923F330014E569 /* animation_llje5kir.json in Resources */,
-				453BB9612A923FDA0014E569 /* hello.json in Resources */,
 				453BB95F2A923F330014E569 /* animation_llje844a.json in Resources */,
 				453BB95E2A923F330014E569 /* animation_llje9w3w.json in Resources */,
 				454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */,
@@ -171,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		325D515CFD84AD66AE069ACE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D529F2360C5DABEB3E9C983B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BabiesFirsts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		454E2CCD2A8C6F7D00D2FDE0 /* Sources */ = {
@@ -301,6 +369,7 @@
 		};
 		454E2CE02A8C6F7E00D2FDE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0382E36961EF7454D2DAB3B8 /* Pods-BabiesFirsts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +399,7 @@
 		};
 		454E2CE12A8C6F7E00D2FDE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
