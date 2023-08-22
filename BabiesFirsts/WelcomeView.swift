@@ -10,10 +10,24 @@ import SwiftUI
 
 struct WelcomeView: View {
   var body: some View {
-    LottieView(animation: .named("wave-hand"))
-      .looping()
-      .frame(maxWidth: 100)
-    .padding()
+    ZStack {
+      Color(.init(named: "BGColor")!)
+      
+      VStack {
+        LottieView(animation: .named("wave-hand"))
+          .looping()
+          .padding()
+          .offset(y: -100)
+      }
+      .frame(alignment: .center)
+      
+      LottieView(animation: .named("hello-white"))
+        .looping()
+        .padding()
+        .offset(y: (UIScreen.main.bounds.height * 0.10))
+      
+    }
+    .edgesIgnoringSafeArea(.all)
   }
 }
 
