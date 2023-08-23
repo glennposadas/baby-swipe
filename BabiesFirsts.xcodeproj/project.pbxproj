@@ -14,10 +14,13 @@
 		453BB95E2A923F330014E569 /* animation_llje9w3w.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95A2A923F330014E569 /* animation_llje9w3w.json */; };
 		453BB95F2A923F330014E569 /* animation_llje844a.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95B2A923F330014E569 /* animation_llje844a.json */; };
 		454E2CD52A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */; };
-		454E2CD72A8C6F7D00D2FDE0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */; };
+		454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */; };
 		454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */; };
 		454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */; };
 		45DD47A02A952D430015D06A /* hello-white.json in Resources */ = {isa = PBXBuildFile; fileRef = 45DD479F2A952D430015D06A /* hello-white.json */; };
+		45DD47A92A9556480015D06A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DD47A82A9556480015D06A /* HomeView.swift */; };
+		45DD47AB2A9556570015D06A /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DD47AA2A9556570015D06A /* Delay.swift */; };
+		45DD47AD2A9556C50015D06A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */; };
 		773E8CB47129021F8D4B517E /* Pods_BabiesFirsts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32BD4E9FCC50A5DA4B3C522 /* Pods_BabiesFirsts.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +34,13 @@
 		453BB95B2A923F330014E569 /* animation_llje844a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje844a.json; sourceTree = "<group>"; };
 		454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabiesFirsts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabiesFirstsApp.swift; sourceTree = "<group>"; };
-		454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45DD479F2A952D430015D06A /* hello-white.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "hello-white.json"; sourceTree = "<group>"; };
+		45DD47A82A9556480015D06A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		45DD47AA2A9556570015D06A /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.release.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.release.xcconfig"; sourceTree = "<group>"; };
 		B32BD4E9FCC50A5DA4B3C522 /* Pods_BabiesFirsts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabiesFirsts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,12 +99,12 @@
 		454E2CD32A8C6F7D00D2FDE0 /* BabiesFirsts */ = {
 			isa = PBXGroup;
 			children = (
-				453BB9682A924C780014E569 /* Lottie Extensions */,
-				453BB9572A923F090014E569 /* Lottie Animation Files */,
-				454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */,
-				454E2CD62A8C6F7D00D2FDE0 /* WelcomeView.swift */,
-				454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */,
+				45DD47A52A9555DE0015D06A /* Animations */,
+				45DD47A42A9555CE0015D06A /* App */,
 				454E2CDA2A8C6F7E00D2FDE0 /* Preview Content */,
+				45DD47A32A9555CA0015D06A /* Resources */,
+				45DD47A22A9555C00015D06A /* Scenes */,
+				45DD47A12A9555B00015D06A /* Utils */,
 			);
 			path = BabiesFirsts;
 			sourceTree = "<group>";
@@ -109,6 +115,65 @@
 				454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45DD47A12A9555B00015D06A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				45DD47AA2A9556570015D06A /* Delay.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		45DD47A22A9555C00015D06A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				45DD47A72A9556000015D06A /* Home */,
+				45DD47A62A9555FA0015D06A /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		45DD47A32A9555CA0015D06A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45DD47A42A9555CE0015D06A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		45DD47A52A9555DE0015D06A /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				453BB9572A923F090014E569 /* Lottie Animation Files */,
+				453BB9682A924C780014E569 /* Lottie Extensions */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		45DD47A62A9555FA0015D06A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */,
+				454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		45DD47A72A9556000015D06A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				45DD47A82A9556480015D06A /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		89CECDC2FC9C5B07B0B831C4 /* Frameworks */ = {
@@ -196,6 +261,7 @@
 				453BB95F2A923F330014E569 /* animation_llje844a.json in Resources */,
 				453BB95E2A923F330014E569 /* animation_llje9w3w.json in Resources */,
 				454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */,
+				45DD47AD2A9556C50015D06A /* Launch Screen.storyboard in Resources */,
 				454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454E2CD72A8C6F7D00D2FDE0 /* WelcomeView.swift in Sources */,
+				45DD47A92A9556480015D06A /* HomeView.swift in Sources */,
+				45DD47AB2A9556570015D06A /* Delay.swift in Sources */,
+				454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */,
 				454E2CD52A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +454,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,6 +485,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,5 +1,5 @@
 //
-//  WelcomeView.swift
+//  SplashView.swift
 //  BabiesFirsts
 //
 //  Created by Glenn Posadas on 8/16/23.
@@ -8,7 +8,7 @@
 import Lottie
 import SwiftUI
 
-struct WelcomeView: View {
+struct SplashView: View {
   var body: some View {
     ZStack {
       Color(.init(named: "BGColor")!)
@@ -33,6 +33,6 @@ struct WelcomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    WelcomeView()
+    SplashView()
   }
 }
