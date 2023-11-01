@@ -13,7 +13,7 @@
 		453BB95D2A923F330014E569 /* animation_lljeem0y.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB9592A923F330014E569 /* animation_lljeem0y.json */; };
 		453BB95E2A923F330014E569 /* animation_llje9w3w.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95A2A923F330014E569 /* animation_llje9w3w.json */; };
 		453BB95F2A923F330014E569 /* animation_llje844a.json in Resources */ = {isa = PBXBuildFile; fileRef = 453BB95B2A923F330014E569 /* animation_llje844a.json */; };
-		454E2CD52A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */; };
+		454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */; };
 		454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */; };
 		454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */; };
 		454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */; };
@@ -32,8 +32,9 @@
 		453BB9592A923F330014E569 /* animation_lljeem0y.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_lljeem0y.json; sourceTree = "<group>"; };
 		453BB95A2A923F330014E569 /* animation_llje9w3w.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje9w3w.json; sourceTree = "<group>"; };
 		453BB95B2A923F330014E569 /* animation_llje844a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_llje844a.json; sourceTree = "<group>"; };
-		454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabiesFirsts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabiesFirstsApp.swift; sourceTree = "<group>"; };
+		454D19702AF206C9008C205A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		454E2CD12A8C6F7D00D2FDE0 /* BabySwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySwipeApp.swift; sourceTree = "<group>"; };
 		454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -81,7 +82,8 @@
 		454E2CC82A8C6F7D00D2FDE0 = {
 			isa = PBXGroup;
 			children = (
-				454E2CD32A8C6F7D00D2FDE0 /* BabiesFirsts */,
+				454D19702AF206C9008C205A /* README.md */,
+				454E2CD32A8C6F7D00D2FDE0 /* BabySwipe */,
 				454E2CD22A8C6F7D00D2FDE0 /* Products */,
 				AF9DCCFB3E8F88FF57044DC9 /* Pods */,
 				89CECDC2FC9C5B07B0B831C4 /* Frameworks */,
@@ -91,12 +93,12 @@
 		454E2CD22A8C6F7D00D2FDE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */,
+				454E2CD12A8C6F7D00D2FDE0 /* BabySwipe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		454E2CD32A8C6F7D00D2FDE0 /* BabiesFirsts */ = {
+		454E2CD32A8C6F7D00D2FDE0 /* BabySwipe */ = {
 			isa = PBXGroup;
 			children = (
 				45DD47A52A9555DE0015D06A /* Animations */,
@@ -106,7 +108,7 @@
 				45DD47A22A9555C00015D06A /* Scenes */,
 				45DD47A12A9555B00015D06A /* Utils */,
 			);
-			path = BabiesFirsts;
+			path = BabySwipe;
 			sourceTree = "<group>";
 		};
 		454E2CDA2A8C6F7E00D2FDE0 /* Preview Content */ = {
@@ -145,7 +147,7 @@
 		45DD47A42A9555CE0015D06A /* App */ = {
 			isa = PBXGroup;
 			children = (
-				454E2CD42A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift */,
+				454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -196,9 +198,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		454E2CD02A8C6F7D00D2FDE0 /* BabiesFirsts */ = {
+		454E2CD02A8C6F7D00D2FDE0 /* BabySwipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 454E2CDF2A8C6F7E00D2FDE0 /* Build configuration list for PBXNativeTarget "BabiesFirsts" */;
+			buildConfigurationList = 454E2CDF2A8C6F7E00D2FDE0 /* Build configuration list for PBXNativeTarget "BabySwipe" */;
 			buildPhases = (
 				D529F2360C5DABEB3E9C983B /* [CP] Check Pods Manifest.lock */,
 				454E2CCD2A8C6F7D00D2FDE0 /* Sources */,
@@ -210,9 +212,9 @@
 			);
 			dependencies = (
 			);
-			name = BabiesFirsts;
+			name = BabySwipe;
 			productName = BabiesFirsts;
-			productReference = 454E2CD12A8C6F7D00D2FDE0 /* BabiesFirsts.app */;
+			productReference = 454E2CD12A8C6F7D00D2FDE0 /* BabySwipe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -230,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 454E2CCC2A8C6F7D00D2FDE0 /* Build configuration list for PBXProject "BabiesFirsts" */;
+			buildConfigurationList = 454E2CCC2A8C6F7D00D2FDE0 /* Build configuration list for PBXProject "BabySwipe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -243,7 +245,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				454E2CD02A8C6F7D00D2FDE0 /* BabiesFirsts */,
+				454E2CD02A8C6F7D00D2FDE0 /* BabySwipe */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +320,7 @@
 				45DD47A92A9556480015D06A /* HomeView.swift in Sources */,
 				45DD47AB2A9556570015D06A /* Delay.swift in Sources */,
 				454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */,
-				454E2CD52A8C6F7D00D2FDE0 /* BabiesFirstsApp.swift in Sources */,
+				454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,15 +450,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BabiesFirsts/Preview Content\"";
-				DEVELOPMENT_TEAM = 76KA23L295;
+				DEVELOPMENT_TEAM = RE4YFXSB23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,15 +483,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BabiesFirsts/Preview Content\"";
-				DEVELOPMENT_TEAM = 76KA23L295;
+				DEVELOPMENT_TEAM = RE4YFXSB23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +510,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		454E2CCC2A8C6F7D00D2FDE0 /* Build configuration list for PBXProject "BabiesFirsts" */ = {
+		454E2CCC2A8C6F7D00D2FDE0 /* Build configuration list for PBXProject "BabySwipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				454E2CDD2A8C6F7E00D2FDE0 /* Debug */,
@@ -513,7 +519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		454E2CDF2A8C6F7E00D2FDE0 /* Build configuration list for PBXNativeTarget "BabiesFirsts" */ = {
+		454E2CDF2A8C6F7E00D2FDE0 /* Build configuration list for PBXNativeTarget "BabySwipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				454E2CE02A8C6F7E00D2FDE0 /* Debug */,

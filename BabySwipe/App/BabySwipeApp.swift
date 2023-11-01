@@ -1,5 +1,5 @@
 //
-//  BabiesFirstsApp.swift
+//  BabySwipeApp.swift
 //  BabiesFirsts
 //
 //  Created by Glenn Posadas on 8/16/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BabiesFirstsApp: App {
+struct BabySwipeApp: App {
   @State private var showSplash = true
   
   var body: some Scene {

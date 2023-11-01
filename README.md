@@ -1,2 +1,2 @@
-# babies-firsts-ios
-The BabiesFirsts project made in SwiftUI
+# BabySwipe
+The BabySwipe project made in SwiftUI
