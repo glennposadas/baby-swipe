@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct BabySwipeApp: App {
+  
+  @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+  
   @State private var showSplash = true
   
   var body: some Scene {

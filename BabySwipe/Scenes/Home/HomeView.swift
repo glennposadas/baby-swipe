@@ -5,16 +5,26 @@
 //  Created by Glenn Posadas on 8/23/23.
 //
 
+import Lottie
 import SwiftUI
 
 struct HomeView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  var body: some View {
+    ZStack {
+      Color(.init(named: "BGColor")!)
+      
+      VStack {
+        LottieView(animation: .named("clouds"))
+          .looping()
+        Spacer()
+      }
     }
+    .edgesIgnoringSafeArea(.all)
+  }
 }
 
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+  static var previews: some View {
+    HomeView()
+  }
 }

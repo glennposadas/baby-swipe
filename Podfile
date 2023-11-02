@@ -1,8 +1,7 @@
-platform :ios, '16.0'
+platform :ios, '15.0'
 
-target 'BabiesFirsts' do
+target 'BabySwipe' do
   use_frameworks!
-
-pod 'lottie-ios', :git => 'https://github.com/airbnb/lottie-ios', :branch => 'master'
-
+  
+  pod 'lottie-ios', :git => 'https://github.com/airbnb/lottie-ios', :branch => 'master'
 end

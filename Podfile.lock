@@ -1,5 +1,5 @@
 PODS:
-  - lottie-ios (4.2.0)
+  - lottie-ios (4.3.3)
 
 DEPENDENCIES:
   - lottie-ios (from `https://github.com/airbnb/lottie-ios`, branch `master`)
@@ -11,12 +11,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   lottie-ios:
-    :commit: 80d7e9a81149a450b0ef96d0b856d1da1be06393
+    :commit: cdf8499996eec658e62d1a116c1d87853d563101
     :git: https://github.com/airbnb/lottie-ios
 
 SPEC CHECKSUMS:
-  lottie-ios: c232ec961d60b701a352475b48474d87a8f27444
+  lottie-ios: 16e4b4d2d9fa132b6b3c6b7e37aae6fa86da66fd
 
-PODFILE CHECKSUM: 68b105aeeda3ae0bb81e17c9ee211d625af35ba7
+PODFILE CHECKSUM: 49faa6ab48898d99686b789e2e67c009f61cb342
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
