@@ -33,12 +33,16 @@
 		45DD47AB2A9556570015D06A /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DD47AA2A9556570015D06A /* Delay.swift */; };
 		45DD47AD2A9556C50015D06A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */; };
 		45FC92862AF44A0400C085DD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92852AF44A0400C085DD /* Category.swift */; };
-		45FC92882AF44B7C00C085DD /* IntroVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92872AF44B7C00C085DD /* IntroVIew.swift */; };
+		45FC92882AF44B7C00C085DD /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92872AF44B7C00C085DD /* IntroView.swift */; };
 		45FC928D2AF4A70A00C085DD /* char7.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928A2AF4A70A00C085DD /* char7.json */; };
 		45FC928E2AF4A70A00C085DD /* char5.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928B2AF4A70A00C085DD /* char5.json */; };
 		45FC928F2AF4A70A00C085DD /* char6.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928C2AF4A70A00C085DD /* char6.json */; };
 		45FC92912AF4A7A900C085DD /* AnimatedCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92902AF4A7A900C085DD /* AnimatedCharacterView.swift */; };
 		45FC92932AF4AC0100C085DD /* Kinderland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45FC92922AF4AC0100C085DD /* Kinderland.ttf */; };
+		45FC92962AF4F1CF00C085DD /* SFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92952AF4F1CF00C085DD /* SFX.swift */; };
+		45FC929B2AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45FC92982AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 */; };
+		45FC929C2AF4F32200C085DD /* happy-childhood-loop-173335.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45FC92992AF4F32200C085DD /* happy-childhood-loop-173335.mp3 */; };
+		45FC929D2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45FC929A2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 */; };
 		C4814793407DA2628DE8AA4E /* Pods_BabySwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,12 +69,16 @@
 		45DD47AA2A9556570015D06A /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45FC92852AF44A0400C085DD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		45FC92872AF44B7C00C085DD /* IntroVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVIew.swift; sourceTree = "<group>"; };
+		45FC92872AF44B7C00C085DD /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		45FC928A2AF4A70A00C085DD /* char7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char7.json; sourceTree = "<group>"; };
 		45FC928B2AF4A70A00C085DD /* char5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char5.json; sourceTree = "<group>"; };
 		45FC928C2AF4A70A00C085DD /* char6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char6.json; sourceTree = "<group>"; };
 		45FC92902AF4A7A900C085DD /* AnimatedCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCharacterView.swift; sourceTree = "<group>"; };
 		45FC92922AF4AC0100C085DD /* Kinderland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kinderland.ttf; sourceTree = "<group>"; };
+		45FC92952AF4F1CF00C085DD /* SFX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFX.swift; sourceTree = "<group>"; };
+		45FC92982AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alexander-nakarada-silly-intro(chosic.com).mp3"; sourceTree = "<group>"; };
+		45FC92992AF4F32200C085DD /* happy-childhood-loop-173335.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "happy-childhood-loop-173335.mp3"; sourceTree = "<group>"; };
+		45FC929A2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3"; sourceTree = "<group>"; };
 		5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862A4989E4386376390AC976 /* Pods-BabySwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySwipe.release.xcconfig"; path = "Target Support Files/Pods-BabySwipe/Pods-BabySwipe.release.xcconfig"; sourceTree = "<group>"; };
 		913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.release.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				45DD47AA2A9556570015D06A /* Delay.swift */,
+				45FC92952AF4F1CF00C085DD /* SFX.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 			children = (
 				454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */,
 				45FC92942AF4AC0800C085DD /* Fonts */,
+				45FC92972AF4F25E00C085DD /* Sounds */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -245,7 +255,7 @@
 		45FC92892AF44B7F00C085DD /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				45FC92872AF44B7C00C085DD /* IntroVIew.swift */,
+				45FC92872AF44B7C00C085DD /* IntroView.swift */,
 				45FC92902AF4A7A900C085DD /* AnimatedCharacterView.swift */,
 			);
 			path = Intro;
@@ -257,6 +267,16 @@
 				45FC92922AF4AC0100C085DD /* Kinderland.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		45FC92972AF4F25E00C085DD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				45FC92982AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 */,
+				45FC929A2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 */,
+				45FC92992AF4F32200C085DD /* happy-childhood-loop-173335.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		89CECDC2FC9C5B07B0B831C4 /* Frameworks */ = {
@@ -361,9 +381,12 @@
 				456EA5902AF38405003D7030 /* char1.json in Resources */,
 				45DD47A02A952D430015D06A /* hello-white.json in Resources */,
 				456EA58A2AF3735A003D7030 /* clouds.json in Resources */,
+				45FC929C2AF4F32200C085DD /* happy-childhood-loop-173335.mp3 in Resources */,
 				45FC92932AF4AC0100C085DD /* Kinderland.ttf in Resources */,
 				456EA5912AF38405003D7030 /* char3.json in Resources */,
 				454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */,
+				45FC929B2AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 in Resources */,
+				45FC929D2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 in Resources */,
 				456EA5872AF357E4003D7030 /* GoogleService-Info.plist in Resources */,
 				45FC928F2AF4A70A00C085DD /* char6.json in Resources */,
 				45DD47AD2A9556C50015D06A /* Launch Screen.storyboard in Resources */,
@@ -446,10 +469,11 @@
 			files = (
 				45DD47A92A9556480015D06A /* HomeView.swift in Sources */,
 				45FC92912AF4A7A900C085DD /* AnimatedCharacterView.swift in Sources */,
-				45FC92882AF44B7C00C085DD /* IntroVIew.swift in Sources */,
+				45FC92882AF44B7C00C085DD /* IntroView.swift in Sources */,
 				45DD47AB2A9556570015D06A /* Delay.swift in Sources */,
 				454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */,
 				456EA5712AF34908003D7030 /* AppDelegate.swift in Sources */,
+				45FC92962AF4F1CF00C085DD /* SFX.swift in Sources */,
 				454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */,
 				45FC92862AF44A0400C085DD /* Category.swift in Sources */,
 			);

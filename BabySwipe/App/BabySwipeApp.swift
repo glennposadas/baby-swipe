@@ -13,6 +13,7 @@ struct BabySwipeApp: App {
   @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
   
   @State private var showSplash = true
+  @State private var play = false
   
   var body: some Scene {
     WindowGroup {
@@ -26,7 +27,12 @@ struct BabySwipeApp: App {
             }
           }
       } else {
-        HomeView()
+        IntroView(onPlay: {
+          play = true
+        })
+        .fullScreenCover(isPresented: $play, content: {
+          HomeView()
+        })
       }
     }
   }

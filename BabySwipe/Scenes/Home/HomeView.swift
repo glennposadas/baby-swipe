@@ -12,12 +12,7 @@ struct HomeView: View {
   var body: some View {
     ZStack {
       Color(.init(named: "BGColor")!)
-      
-      VStack {
-        LottieView(animation: .named("clouds"))
-          .looping()
-        Spacer()
-      }
+      Text("HOME")
     }
     .edgesIgnoringSafeArea(.all)
   }
