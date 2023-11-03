@@ -33,6 +33,7 @@
 		45DD47AB2A9556570015D06A /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DD47AA2A9556570015D06A /* Delay.swift */; };
 		45DD47AD2A9556C50015D06A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */; };
 		45FC92862AF44A0400C085DD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92852AF44A0400C085DD /* Category.swift */; };
+		45FC92882AF44B7C00C085DD /* IntroVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92872AF44B7C00C085DD /* IntroVIew.swift */; };
 		C4814793407DA2628DE8AA4E /* Pods_BabySwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		45DD47AA2A9556570015D06A /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45FC92852AF44A0400C085DD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		45FC92872AF44B7C00C085DD /* IntroVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVIew.swift; sourceTree = "<group>"; };
 		5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862A4989E4386376390AC976 /* Pods-BabySwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySwipe.release.xcconfig"; path = "Target Support Files/Pods-BabySwipe/Pods-BabySwipe.release.xcconfig"; sourceTree = "<group>"; };
 		913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.release.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		45DD47A22A9555C00015D06A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				45FC92892AF44B7F00C085DD /* Intro */,
 				45DD47A72A9556000015D06A /* Home */,
 				45DD47A62A9555FA0015D06A /* Splash */,
 			);
@@ -223,6 +226,14 @@
 				45FC92852AF44A0400C085DD /* Category.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		45FC92892AF44B7F00C085DD /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				45FC92872AF44B7C00C085DD /* IntroVIew.swift */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		89CECDC2FC9C5B07B0B831C4 /* Frameworks */ = {
@@ -407,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DD47A92A9556480015D06A /* HomeView.swift in Sources */,
+				45FC92882AF44B7C00C085DD /* IntroVIew.swift in Sources */,
 				45DD47AB2A9556570015D06A /* Delay.swift in Sources */,
 				454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */,
 				456EA5712AF34908003D7030 /* AppDelegate.swift in Sources */,
