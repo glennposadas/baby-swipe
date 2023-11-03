@@ -37,6 +37,8 @@
 		45FC928D2AF4A70A00C085DD /* char7.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928A2AF4A70A00C085DD /* char7.json */; };
 		45FC928E2AF4A70A00C085DD /* char5.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928B2AF4A70A00C085DD /* char5.json */; };
 		45FC928F2AF4A70A00C085DD /* char6.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928C2AF4A70A00C085DD /* char6.json */; };
+		45FC92912AF4A7A900C085DD /* AnimatedCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92902AF4A7A900C085DD /* AnimatedCharacterView.swift */; };
+		45FC92932AF4AC0100C085DD /* Kinderland.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45FC92922AF4AC0100C085DD /* Kinderland.ttf */; };
 		C4814793407DA2628DE8AA4E /* Pods_BabySwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		45FC928A2AF4A70A00C085DD /* char7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char7.json; sourceTree = "<group>"; };
 		45FC928B2AF4A70A00C085DD /* char5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char5.json; sourceTree = "<group>"; };
 		45FC928C2AF4A70A00C085DD /* char6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char6.json; sourceTree = "<group>"; };
+		45FC92902AF4A7A900C085DD /* AnimatedCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCharacterView.swift; sourceTree = "<group>"; };
+		45FC92922AF4AC0100C085DD /* Kinderland.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kinderland.ttf; sourceTree = "<group>"; };
 		5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862A4989E4386376390AC976 /* Pods-BabySwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySwipe.release.xcconfig"; path = "Target Support Files/Pods-BabySwipe/Pods-BabySwipe.release.xcconfig"; sourceTree = "<group>"; };
 		913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.release.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */,
+				45FC92942AF4AC0800C085DD /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -241,8 +246,17 @@
 			isa = PBXGroup;
 			children = (
 				45FC92872AF44B7C00C085DD /* IntroVIew.swift */,
+				45FC92902AF4A7A900C085DD /* AnimatedCharacterView.swift */,
 			);
 			path = Intro;
+			sourceTree = "<group>";
+		};
+		45FC92942AF4AC0800C085DD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45FC92922AF4AC0100C085DD /* Kinderland.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		89CECDC2FC9C5B07B0B831C4 /* Frameworks */ = {
@@ -347,6 +361,7 @@
 				456EA5902AF38405003D7030 /* char1.json in Resources */,
 				45DD47A02A952D430015D06A /* hello-white.json in Resources */,
 				456EA58A2AF3735A003D7030 /* clouds.json in Resources */,
+				45FC92932AF4AC0100C085DD /* Kinderland.ttf in Resources */,
 				456EA5912AF38405003D7030 /* char3.json in Resources */,
 				454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */,
 				456EA5872AF357E4003D7030 /* GoogleService-Info.plist in Resources */,
@@ -430,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DD47A92A9556480015D06A /* HomeView.swift in Sources */,
+				45FC92912AF4A7A900C085DD /* AnimatedCharacterView.swift in Sources */,
 				45FC92882AF44B7C00C085DD /* IntroVIew.swift in Sources */,
 				45DD47AB2A9556570015D06A /* Delay.swift in Sources */,
 				454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */,
@@ -572,11 +588,11 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Baby Swipe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -623,11 +639,11 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Baby Swipe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
