@@ -31,22 +31,10 @@ struct IntroVIew: View {
           
           HStack {
               ZStack {
-                  ForEach(1...4, id: \.self) { index in
-                      LottieView(animation: .named("char\(index)"))
-                          .looping()
-                          .frame(width: 250)
-                          .offset(
-                            x: isAnimating ? targetEndXPt(index: index)
-                            : initialXPt(index: index),
-                              y: UIScreen.main.bounds.height * 0.15
-                          )
+                  ForEach(1...7, id: \.self) { index in
+                    AnimatedCharacterView(index: index)
                   }
               }
-              .animation(
-                  Animation.linear(duration: 6)
-                      .repeatForever(autoreverses: false),
-                  value: UUID()
-              )
           }
           
         }
@@ -71,6 +59,8 @@ struct IntroVIew: View {
 
 struct AnimatedCharacterView: View {
   
+  // Characters by Jeffrey Christopher
+  
   @State var index: Int
   @State private var isAnimating = false
   
@@ -83,14 +73,22 @@ struct AnimatedCharacterView: View {
           : initialXPt(index: index),
             y: UIScreen.main.bounds.height * 0.15
         )
+        .animation(
+          Animation.linear(duration: TimeInterval(Int.random(in: 4...10) + index))
+                .repeatForever(autoreverses: false),
+            value: UUID()
+        )
+        .onAppear {
+          isAnimating = true
+        }
   }
   
   private func initialXPt(index: Int) -> CGFloat {
-    return (UIScreen.main.bounds.width - 460) - CGFloat(index * 100) - 200
+    return (-UIScreen.main.bounds.width * 0.5) - CGFloat(index * 100)
   }
   
   private func targetEndXPt(index: Int) -> CGFloat {
-    return CGFloat(index * 100) + (UIScreen.main.bounds.width * 0.8)
+    return UIScreen.main.bounds.width * 0.8
   }
 }
 

@@ -34,6 +34,9 @@
 		45DD47AD2A9556C50015D06A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */; };
 		45FC92862AF44A0400C085DD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92852AF44A0400C085DD /* Category.swift */; };
 		45FC92882AF44B7C00C085DD /* IntroVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92872AF44B7C00C085DD /* IntroVIew.swift */; };
+		45FC928D2AF4A70A00C085DD /* char7.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928A2AF4A70A00C085DD /* char7.json */; };
+		45FC928E2AF4A70A00C085DD /* char5.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928B2AF4A70A00C085DD /* char5.json */; };
+		45FC928F2AF4A70A00C085DD /* char6.json in Resources */ = {isa = PBXBuildFile; fileRef = 45FC928C2AF4A70A00C085DD /* char6.json */; };
 		C4814793407DA2628DE8AA4E /* Pods_BabySwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		45DD47AC2A9556C50015D06A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		45FC92852AF44A0400C085DD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		45FC92872AF44B7C00C085DD /* IntroVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVIew.swift; sourceTree = "<group>"; };
+		45FC928A2AF4A70A00C085DD /* char7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char7.json; sourceTree = "<group>"; };
+		45FC928B2AF4A70A00C085DD /* char5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char5.json; sourceTree = "<group>"; };
+		45FC928C2AF4A70A00C085DD /* char6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char6.json; sourceTree = "<group>"; };
 		5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862A4989E4386376390AC976 /* Pods-BabySwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySwipe.release.xcconfig"; path = "Target Support Files/Pods-BabySwipe/Pods-BabySwipe.release.xcconfig"; sourceTree = "<group>"; };
 		913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.release.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +158,9 @@
 		456EA58B2AF383F8003D7030 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				45FC928B2AF4A70A00C085DD /* char5.json */,
+				45FC928C2AF4A70A00C085DD /* char6.json */,
+				45FC928A2AF4A70A00C085DD /* char7.json */,
 				456EA58C2AF38405003D7030 /* char1.json */,
 				456EA58E2AF38405003D7030 /* char2.json */,
 				456EA58D2AF38405003D7030 /* char3.json */,
@@ -333,6 +342,7 @@
 			files = (
 				456EA5932AF38405003D7030 /* char4.json in Resources */,
 				456EA5922AF38405003D7030 /* char2.json in Resources */,
+				45FC928E2AF4A70A00C085DD /* char5.json in Resources */,
 				4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */,
 				456EA5902AF38405003D7030 /* char1.json in Resources */,
 				45DD47A02A952D430015D06A /* hello-white.json in Resources */,
@@ -340,8 +350,10 @@
 				456EA5912AF38405003D7030 /* char3.json in Resources */,
 				454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */,
 				456EA5872AF357E4003D7030 /* GoogleService-Info.plist in Resources */,
+				45FC928F2AF4A70A00C085DD /* char6.json in Resources */,
 				45DD47AD2A9556C50015D06A /* Launch Screen.storyboard in Resources */,
 				454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */,
+				45FC928D2AF4A70A00C085DD /* char7.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
