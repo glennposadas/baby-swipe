@@ -43,6 +43,7 @@
 		45FC929B2AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45FC92982AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 */; };
 		45FC929C2AF4F32200C085DD /* happy-childhood-loop-173335.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45FC92992AF4F32200C085DD /* happy-childhood-loop-173335.mp3 */; };
 		45FC929D2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45FC929A2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 */; };
+		45FC92A12AF5252A00C085DD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FC92A02AF5252A00C085DD /* Cell.swift */; };
 		C4814793407DA2628DE8AA4E /* Pods_BabySwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		45FC92982AF4F32200C085DD /* alexander-nakarada-silly-intro(chosic.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alexander-nakarada-silly-intro(chosic.com).mp3"; sourceTree = "<group>"; };
 		45FC92992AF4F32200C085DD /* happy-childhood-loop-173335.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "happy-childhood-loop-173335.mp3"; sourceTree = "<group>"; };
 		45FC929A2AF4F32200C085DD /* funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3"; sourceTree = "<group>"; };
+		45FC92A02AF5252A00C085DD /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862A4989E4386376390AC976 /* Pods-BabySwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySwipe.release.xcconfig"; path = "Target Support Files/Pods-BabySwipe/Pods-BabySwipe.release.xcconfig"; sourceTree = "<group>"; };
 		913D275723C767B83FC30604 /* Pods-BabiesFirsts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.release.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.release.xcconfig"; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				45DD47A82A9556480015D06A /* HomeView.swift */,
+				45FC92A02AF5252A00C085DD /* Cell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */,
 				456EA5712AF34908003D7030 /* AppDelegate.swift in Sources */,
 				45FC92962AF4F1CF00C085DD /* SFX.swift in Sources */,
+				45FC92A12AF5252A00C085DD /* Cell.swift in Sources */,
 				454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */,
 				45FC92862AF44A0400C085DD /* Category.swift in Sources */,
 			);
