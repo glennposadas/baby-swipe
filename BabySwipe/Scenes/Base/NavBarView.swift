@@ -36,6 +36,7 @@ struct NavBarView<Content>: View where Content: View {
         }
         
         content()
+          .padding(.top, 70)
       }
       .navigationBarTitleDisplayMode(.inline)
     }
@@ -44,6 +45,8 @@ struct NavBarView<Content>: View where Content: View {
 
 #Preview {
   NavBarView {
-    Text("Hello!")
+    List(1..<21, id: \.self) { number in
+        Text("Content \(number)")
+    }
   }
 }
