@@ -10,6 +10,9 @@
 		4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 4538D9602A92BB0C008D6CBA /* wave-hand.json */; };
 		45418DC92AF63C7800EF2C83 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DC82AF63C7800EF2C83 /* NavBarView.swift */; };
 		45418DCB2AF63D3F00EF2C83 /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCA2AF63D3F00EF2C83 /* Color+App.swift */; };
+		45418DCE2AF65FEE00EF2C83 /* AdMobRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCD2AF65FEE00EF2C83 /* AdMobRectangleView.swift */; };
+		45418DD02AF6611B00EF2C83 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCF2AF6611B00EF2C83 /* BannerViewController.swift */; };
+		45418DD22AF6613B00EF2C83 /* AdTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DD12AF6613B00EF2C83 /* AdTypes.swift */; };
 		454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */; };
 		454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */; };
 		454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 		4538D9602A92BB0C008D6CBA /* wave-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wave-hand.json"; sourceTree = "<group>"; };
 		45418DC82AF63C7800EF2C83 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		45418DCA2AF63D3F00EF2C83 /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
+		45418DCD2AF65FEE00EF2C83 /* AdMobRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobRectangleView.swift; sourceTree = "<group>"; };
+		45418DCF2AF6611B00EF2C83 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		45418DD12AF6613B00EF2C83 /* AdTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTypes.swift; sourceTree = "<group>"; };
 		454D19702AF206C9008C205A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		454E2CD12A8C6F7D00D2FDE0 /* BabySwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySwipeApp.swift; sourceTree = "<group>"; };
@@ -128,6 +134,16 @@
 				45418DC82AF63C7800EF2C83 /* NavBarView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		45418DCC2AF65FDE00EF2C83 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				45418DD12AF6613B00EF2C83 /* AdTypes.swift */,
+				45418DCD2AF65FEE00EF2C83 /* AdMobRectangleView.swift */,
+				45418DCF2AF6611B00EF2C83 /* BannerViewController.swift */,
+			);
+			path = Ads;
 			sourceTree = "<group>";
 		};
 		454E2CC82A8C6F7D00D2FDE0 = {
@@ -208,6 +224,7 @@
 		45DD47A22A9555C00015D06A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				45418DCC2AF65FDE00EF2C83 /* Ads */,
 				45418DC72AF63C6900EF2C83 /* Base */,
 				45DD47A72A9556000015D06A /* Home */,
 				45FC92892AF44B7F00C085DD /* Intro */,
@@ -486,14 +503,17 @@
 			files = (
 				45DD47A92A9556480015D06A /* HomeView.swift in Sources */,
 				45418DCB2AF63D3F00EF2C83 /* Color+App.swift in Sources */,
+				45418DCE2AF65FEE00EF2C83 /* AdMobRectangleView.swift in Sources */,
 				45FC92912AF4A7A900C085DD /* AnimatedCharacterView.swift in Sources */,
 				45FC92882AF44B7C00C085DD /* IntroView.swift in Sources */,
 				45DD47AB2A9556570015D06A /* Delay.swift in Sources */,
+				45418DD02AF6611B00EF2C83 /* BannerViewController.swift in Sources */,
 				454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */,
 				45418DC92AF63C7800EF2C83 /* NavBarView.swift in Sources */,
 				456EA5712AF34908003D7030 /* AppDelegate.swift in Sources */,
 				45FC92962AF4F1CF00C085DD /* SFX.swift in Sources */,
 				45FC92A12AF5252A00C085DD /* Cell.swift in Sources */,
+				45418DD22AF6613B00EF2C83 /* AdTypes.swift in Sources */,
 				454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */,
 				45FC92862AF44A0400C085DD /* Category.swift in Sources */,
 			);

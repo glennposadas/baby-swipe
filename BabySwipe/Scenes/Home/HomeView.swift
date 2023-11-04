@@ -14,7 +14,7 @@ struct HomeView: View {
   // MARK: Properties
   
   @State private var selectedCategory: Category!
-  @State private var isPresentingDetail = false
+  @State private var presentGame: Bool = false
   
   private var categories = Category.all
   
@@ -26,14 +26,6 @@ struct HomeView: View {
       NavBarView {
         contentView
       }
-      .toolbar(content: {
-        ToolbarItem(placement: .principal) {
-          HStack {
-            Image(systemName: "app.fill")
-            Text("MY GAMES")
-          }
-        }
-      })
     }
   }
   
@@ -45,8 +37,8 @@ struct HomeView: View {
           ForEach(categories, id: \.self) { category in
             Button(action: {
               selectedCategory = category
-              isPresentingDetail.toggle()
-              print("Selected \(selectedCategory.title)")
+              presentGame.toggle()
+              debugPrint("Selected \(selectedCategory.title)")
             }) {
               Cell(category: category)
                 .scaledToFill()
@@ -60,9 +52,14 @@ struct HomeView: View {
           } // ForEach
         } // LazyVGrid
       } // ScrollView
-      .padding(.init(top: 0, leading: 0, bottom: 60, trailing: 0))
+      .padding(.init(top: 10, leading: 0, bottom: 60, trailing: 0))
       
       //      AdMobRectangleView(adBannerType: .home)
+    }
+    .fullScreenCover(isPresented: $presentGame) {
+      debugPrint("Dismiss")
+    } content: {
+      Text("ff")
     }
   }
 }
