@@ -9,13 +9,12 @@ import SwiftUI
 
 struct NavBarView<Content>: View where Content: View {
   
-  let title: String
-  let content: Content
+  let content: () -> Content
   
   var body: some View {
     NavigationView {
       ZStack {
-        VStack(spacing: 0) {
+        VStack {
           Rectangle()
             .overlay {
               ZStack {
@@ -36,7 +35,7 @@ struct NavBarView<Content>: View where Content: View {
           Spacer()
         }
         
-        content
+        content()
       }
       .navigationBarTitleDisplayMode(.inline)
     }
@@ -44,5 +43,7 @@ struct NavBarView<Content>: View where Content: View {
 }
 
 #Preview {
-  NavBarView(title: "MY GAMES", content: Text("Hello!"))
+  NavBarView {
+    Text("Hello!")
+  }
 }

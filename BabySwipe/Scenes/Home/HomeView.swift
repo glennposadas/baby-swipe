@@ -23,11 +23,9 @@ struct HomeView: View {
   
   var body: some View {
     ZStack {
-      NavigationView {
+      NavBarView {
         contentView
       }
-      .navigationBarTitleDisplayMode(.inline)
-//      .navigationBarHidden(true)
       .toolbar(content: {
         ToolbarItem(placement: .principal) {
           HStack {
