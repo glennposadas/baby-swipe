@@ -15,18 +15,30 @@ struct NavBarView<Content>: View where Content: View {
   var body: some View {
     NavigationView {
       ZStack {
-        VStack {
+        VStack(spacing: 0) {
           Rectangle()
             .overlay {
-              Color.bgColor
+              ZStack {
+                Color.bgColor
+                VStack {
+                  Spacer()
+                  Image("MainLogo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .padding(.bottom, 20)
+                }
+              }
             }
-            .frame(height: 100)
-            .edgesIgnoringSafeArea(.all)
+            .ignoresSafeArea()
+            .frame(height: 70)
+          
           Spacer()
         }
+        
         content
       }
-      .navigationBarTitle(title, displayMode: .inline)
+      .navigationBarTitleDisplayMode(.inline)
     }
   }
 }
