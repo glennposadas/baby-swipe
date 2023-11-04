@@ -15,6 +15,17 @@ enum Category: String {
   case numbers
   case shapes
   
+  static var all: [Category] {
+    return [
+      .animals,
+      .colors,
+      .fruits,
+      .letters,
+      .numbers,
+      .shapes
+    ]
+  }
+  
   var title: String {
     rawValue.capitalized
   }

@@ -14,7 +14,7 @@ struct Cell: View {
   var body: some View {
     category.icon
       .resizable()
-      .scaledToFill()
+      .scaledToFit()
       .frame(minWidth: 0, maxWidth: .infinity)
       .cornerRadius(10)
       .shadow(color: Color.primary.opacity(0.3), radius: 1)

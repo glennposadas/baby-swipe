@@ -24,10 +24,11 @@ struct IntroView: View {
   
   var body: some View {
     ZStack {
-      Color(.init(named: "BGColor")!)
+      Color.bgColor
       
       ZStack {
         
+        // Clouds
         VStack {
           LottieView(animation: .named("clouds"))
             .looping()
@@ -55,8 +56,10 @@ struct IntroView: View {
               isAnimating = true
             }
           
+          // Play
           Button(action: {
-            print("heeeey")
+            print("Play")
+            onPlay?()
           }) {
             HStack {
               Spacer()
@@ -89,7 +92,7 @@ struct IntroView: View {
             }) {
               ZStack {
                 Circle()
-                  .fill(Color(.init(named: "BGColor")!))
+                  .fill(Color.bgColor)
                   .frame(width: 60, height: 60)
                   .overlay(
                     Image(systemName: mainSoundSettingIsOn ? "speaker.wave.1.fill" : "speaker.slash.fill")
@@ -107,7 +110,8 @@ struct IntroView: View {
             .padding(.trailing, 16)
             .padding(.top, 16)
           }
-          .offset(x: 0, y: 20) // Adjust the offset as needed
+          .padding(.top, 30)
+          
           Spacer()
         }
 

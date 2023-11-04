@@ -11,7 +11,7 @@ import SwiftUI
 struct SplashView: View {
   var body: some View {
     ZStack {
-      Color(.init(named: "BGColor")!)
+      Color.bgColor
       
       VStack {
         LottieView(animation: .named("wave-hand"))
