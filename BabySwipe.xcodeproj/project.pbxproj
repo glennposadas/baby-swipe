@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		452CE8E22AF7B33F00F1D38E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CE8E12AF7B33F00F1D38E /* CardView.swift */; };
+		452CE8E42AF7B39000F1D38E /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CE8E32AF7B39000F1D38E /* CardContainerView.swift */; };
 		4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 4538D9602A92BB0C008D6CBA /* wave-hand.json */; };
 		45418DC92AF63C7800EF2C83 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DC82AF63C7800EF2C83 /* NavBarView.swift */; };
 		45418DCB2AF63D3F00EF2C83 /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCA2AF63D3F00EF2C83 /* Color+App.swift */; };
@@ -56,6 +58,8 @@
 /* Begin PBXFileReference section */
 		0382E36961EF7454D2DAB3B8 /* Pods-BabiesFirsts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabiesFirsts.debug.xcconfig"; path = "Target Support Files/Pods-BabiesFirsts/Pods-BabiesFirsts.debug.xcconfig"; sourceTree = "<group>"; };
 		3EEBED597EB79ECBB2222159 /* Pods-BabySwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySwipe.debug.xcconfig"; path = "Target Support Files/Pods-BabySwipe/Pods-BabySwipe.debug.xcconfig"; sourceTree = "<group>"; };
+		452CE8E12AF7B33F00F1D38E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		452CE8E32AF7B39000F1D38E /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
 		4538D9602A92BB0C008D6CBA /* wave-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wave-hand.json"; sourceTree = "<group>"; };
 		45418DC82AF63C7800EF2C83 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		45418DCA2AF63D3F00EF2C83 /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452CE8E02AF7B32E00F1D38E /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				452CE8E12AF7B33F00F1D38E /* CardView.swift */,
+				452CE8E32AF7B39000F1D38E /* CardContainerView.swift */,
+			);
+			path = Swipe;
+			sourceTree = "<group>";
+		};
 		453BB9572A923F090014E569 /* Lottie Animation Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		45418DD32AF742F100EF2C83 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				452CE8E02AF7B32E00F1D38E /* Swipe */,
 				45418DD42AF742FF00EF2C83 /* GameView.swift */,
 			);
 			path = Game;
@@ -513,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DD47A92A9556480015D06A /* HomeView.swift in Sources */,
+				452CE8E42AF7B39000F1D38E /* CardContainerView.swift in Sources */,
 				45418DCB2AF63D3F00EF2C83 /* Color+App.swift in Sources */,
 				45418DCE2AF65FEE00EF2C83 /* AdMobRectangleView.swift in Sources */,
 				45FC92912AF4A7A900C085DD /* AnimatedCharacterView.swift in Sources */,
@@ -527,6 +542,7 @@
 				45418DD22AF6613B00EF2C83 /* AdTypes.swift in Sources */,
 				454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */,
 				45418DD52AF742FF00EF2C83 /* GameView.swift in Sources */,
+				452CE8E22AF7B33F00F1D38E /* CardView.swift in Sources */,
 				45FC92862AF44A0400C085DD /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

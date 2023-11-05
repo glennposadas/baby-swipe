@@ -16,7 +16,14 @@ struct GameView: View {
   @Environment(\.dismiss) var dismiss
   @State private var isShowingExitConfirmation = false
   @State var category: Category!
-
+  
+  let cards: [CardView<CardContainerView>] = [
+    CardView(content: { CardContainerView() }),
+    CardView(content: { CardContainerView() }),
+    CardView(content: { CardContainerView() }),
+    CardView(content: { CardContainerView() })
+  ]
+  
   // MARK: -
   // MARK: Body
   
@@ -60,6 +67,7 @@ struct GameView: View {
           Image("MainLogo")
             .resizable()
             .scaledToFit()
+            .frame(minHeight: 150)
             .padding()
           
           Spacer()
@@ -81,7 +89,11 @@ struct GameView: View {
             .stroke(Color.white, lineWidth: 2)
           )
           .padding(.top, -30)
-
+        
+        // Cards
+        
+        CardStackView(cards: cards, cardAction: {})
+        
         Spacer()
       }
       .padding(.top, 30)
