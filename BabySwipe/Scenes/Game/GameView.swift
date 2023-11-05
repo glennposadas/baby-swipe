@@ -15,7 +15,7 @@ struct GameView: View {
   
   @Environment(\.dismiss) var dismiss
   @State private var isShowingExitConfirmation = false
-  @State var category: Category!
+  @Binding var category: Category
   
   let cards: [CardView<CardContainerView>] = [
     CardView(content: { CardContainerView() }),
@@ -67,7 +67,7 @@ struct GameView: View {
           Image("MainLogo")
             .resizable()
             .scaledToFit()
-            .frame(minHeight: 150)
+            .frame(minHeight: 100)
             .padding()
           
           Spacer()
@@ -76,7 +76,7 @@ struct GameView: View {
         
         // Subtitle
         Text(category.title.uppercased())
-          .font(.custom("Kinderland", size: 20))
+          .font(.custom("Kinderland", size: 18))
           .foregroundStyle(.white)
           .padding(.all, 8)
           .background(
@@ -96,7 +96,7 @@ struct GameView: View {
         
         Spacer()
       }
-      .padding(.top, 30)
+      .padding(.top, 20)
     }
     .ignoresSafeArea()
     .alert(isPresented: $isShowingExitConfirmation) {
@@ -113,5 +113,5 @@ struct GameView: View {
 }
 
 #Preview {
-  GameView(category: .numbers)
+  GameView(category: .constant(.animals))
 }

@@ -192,7 +192,7 @@ public struct CardStackView<Content: View>: View {
       .animation(.spring, value: UUID())
       .zIndex(Double(cards.count - index))
       .offset(x: 0, y: yOffset)
-      .rotationEffect(.degrees(Double((currentIndex - index) * 2)))
+//      .rotationEffect(.degrees(Double((currentIndex - index) * 2)))
   }
   
   private func pastCardView(card: CardView<Content>, index: Int) -> some View {
@@ -200,7 +200,7 @@ public struct CardStackView<Content: View>: View {
     return card
       .zIndex(Double(index))
       .offset(x: 0, y: offset)
-      .rotationEffect(.degrees(Double((index - currentIndex) * 2)))
+//      .rotationEffect(.degrees(Double((index - currentIndex) * 2)))
       .opacity(0)
       .animation(.spring, value: UUID())
   }

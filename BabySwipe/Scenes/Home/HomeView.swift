@@ -13,7 +13,7 @@ struct HomeView: View {
   // MARK: -
   // MARK: Properties
   
-  @State private var selectedCategory: Category!
+  @State private var selectedCategory: Category = .animals
   @State private var presentGame: Bool = false
   
   private var categories = Category.all
@@ -59,7 +59,7 @@ struct HomeView: View {
     .fullScreenCover(isPresented: $presentGame) {
       debugPrint("Dismiss game")
     } content: {
-      Text("ff")
+      GameView(category: $selectedCategory)
     }
   }
 }
