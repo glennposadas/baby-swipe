@@ -50,7 +50,7 @@ struct GameView: View {
           .foregroundStyle(Color.white)
           .frame(width: 60, height: 60, alignment: .leading)
           .shadow(radius: 3)
-          .padding(.init(top: 10, leading: 10, bottom: 0, trailing: 0))
+          .padding(.init(top: 30, leading: 10, bottom: 0, trailing: 0))
           
           Spacer()
         }
@@ -67,7 +67,7 @@ struct GameView: View {
           Image("MainLogo")
             .resizable()
             .scaledToFit()
-            .frame(minHeight: 100)
+            .frame(maxHeight: 130)
             .padding()
           
           Spacer()
@@ -93,10 +93,11 @@ struct GameView: View {
         // Cards
         
         CardStackView(cards: cards, cardAction: {})
+          .padding()
         
         Spacer()
       }
-      .padding(.top, 20)
+      .padding(.top, 30)
     }
     .ignoresSafeArea()
     .alert(isPresented: $isShowingExitConfirmation) {
