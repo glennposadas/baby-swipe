@@ -27,28 +27,30 @@ struct GameView: View {
       Image("BGImage")
         .resizable()
         .scaledToFill()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
       // Button
-      VStack {
-        Button(action: {
-          isShowingExitConfirmation = true
-        }, label: {
-          Image(systemName: "xmark.circle.fill")
-            .font(.system(size: 40))
-        })
-        .background(content: {
-          Color.red
-        })
-        .foregroundStyle(Color.white)
-        .frame(width: 60, height: 60, alignment: .leading)
-        .shadow(radius: 10)
-        .padding(.init(top: 10, leading: 10, bottom: 0, trailing: 0))
+      HStack(alignment: .center, spacing: 0) {
+        VStack {
+          Button(action: {
+            isShowingExitConfirmation = true
+          }, label: {
+            Image(systemName: "xmark.circle.fill")
+              .font(.system(size: 40))
+          })
+          .foregroundStyle(Color.white)
+          .frame(width: 60, height: 60, alignment: .leading)
+          .shadow(radius: 3)
+          .padding(.init(top: 10, leading: 10, bottom: 0, trailing: 0))
+          
+          Spacer()
+        }
         
         Spacer()
       }
       
+      // Header
     }
     .ignoresSafeArea()
     .alert(isPresented: $isShowingExitConfirmation) {
