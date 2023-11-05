@@ -31,7 +31,7 @@ struct GameView: View {
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
-      // Button
+      // Close Button
       HStack(alignment: .center, spacing: 0) {
         VStack {
           Button(action: {
@@ -56,16 +56,19 @@ struct GameView: View {
         HStack {
           Spacer()
           
+          // Main Logo For Banner
           Image("MainLogo")
             .resizable()
             .scaledToFit()
+            .padding()
           
           Spacer()
         }
         .padding()
         
+        // Subtitle
         Text(category.title.uppercased())
-          .font(.custom("Kinderland", size: 25))
+          .font(.custom("Kinderland", size: 20))
           .foregroundStyle(.white)
           .padding(.all, 8)
           .background(
@@ -77,7 +80,7 @@ struct GameView: View {
           .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(Color.white, lineWidth: 2)
           )
-          .padding(.top, -10)
+          .padding(.top, -30)
 
         Spacer()
       }
