@@ -57,7 +57,7 @@ struct HomeView: View {
       //      AdMobRectangleView(adBannerType: .home)
     }
     .fullScreenCover(isPresented: $presentGame) {
-      debugPrint("Dismiss")
+      debugPrint("Dismiss game")
     } content: {
       Text("ff")
     }

@@ -13,6 +13,7 @@
 		45418DCE2AF65FEE00EF2C83 /* AdMobRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCD2AF65FEE00EF2C83 /* AdMobRectangleView.swift */; };
 		45418DD02AF6611B00EF2C83 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCF2AF6611B00EF2C83 /* BannerViewController.swift */; };
 		45418DD22AF6613B00EF2C83 /* AdTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DD12AF6613B00EF2C83 /* AdTypes.swift */; };
+		45418DD52AF742FF00EF2C83 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DD42AF742FF00EF2C83 /* GameView.swift */; };
 		454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */; };
 		454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */; };
 		454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		45418DCD2AF65FEE00EF2C83 /* AdMobRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobRectangleView.swift; sourceTree = "<group>"; };
 		45418DCF2AF6611B00EF2C83 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		45418DD12AF6613B00EF2C83 /* AdTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTypes.swift; sourceTree = "<group>"; };
+		45418DD42AF742FF00EF2C83 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		454D19702AF206C9008C205A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		454E2CD12A8C6F7D00D2FDE0 /* BabySwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabySwipeApp.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = Ads;
 			sourceTree = "<group>";
 		};
+		45418DD32AF742F100EF2C83 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				45418DD42AF742FF00EF2C83 /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		454E2CC82A8C6F7D00D2FDE0 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +236,7 @@
 			children = (
 				45418DCC2AF65FDE00EF2C83 /* Ads */,
 				45418DC72AF63C6900EF2C83 /* Base */,
+				45418DD32AF742F100EF2C83 /* Game */,
 				45DD47A72A9556000015D06A /* Home */,
 				45FC92892AF44B7F00C085DD /* Intro */,
 				45DD47A62A9555FA0015D06A /* Splash */,
@@ -515,6 +526,7 @@
 				45FC92A12AF5252A00C085DD /* Cell.swift in Sources */,
 				45418DD22AF6613B00EF2C83 /* AdTypes.swift in Sources */,
 				454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */,
+				45418DD52AF742FF00EF2C83 /* GameView.swift in Sources */,
 				45FC92862AF44A0400C085DD /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,4 +16,5 @@ enum AdBannerType: String {
 
 enum AdInterstitialType: String {
   case play = "ca-app-pub-7352177825579783/4863240059"
+  case test = "ca-app-pub-3940256099942544/4411468910"
 }
