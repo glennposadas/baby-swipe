@@ -15,6 +15,7 @@ struct GameView: View {
   
   @Environment(\.dismiss) var dismiss
   @State private var isShowingExitConfirmation = false
+  @State var category: Category!
 
   // MARK: -
   // MARK: Body
@@ -51,6 +52,36 @@ struct GameView: View {
       }
       
       // Header
+      VStack {
+        HStack {
+          Spacer()
+          
+          Image("MainLogo")
+            .resizable()
+            .scaledToFit()
+          
+          Spacer()
+        }
+        .padding()
+        
+        Text(category.title.uppercased())
+          .font(.custom("Kinderland", size: 25))
+          .foregroundStyle(.white)
+          .padding(.all, 8)
+          .background(
+            LinearGradient(gradient: Gradient(colors: [.gradient2, .gradient1]),
+                           startPoint: .top,
+                           endPoint: .bottom)
+          )
+          .clipShape(RoundedRectangle(cornerRadius: 10))
+          .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.white, lineWidth: 2)
+          )
+          .padding(.top, -10)
+
+        Spacer()
+      }
+      .padding(.top, 30)
     }
     .ignoresSafeArea()
     .alert(isPresented: $isShowingExitConfirmation) {
@@ -67,5 +98,5 @@ struct GameView: View {
 }
 
 #Preview {
-  GameView()
+  GameView(category: .numbers)
 }
