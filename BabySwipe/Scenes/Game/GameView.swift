@@ -38,7 +38,6 @@ struct GameView: View {
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
-      // Close Button
       HStack(alignment: .center, spacing: 0) {
         VStack {
           Button(action: {
@@ -50,7 +49,7 @@ struct GameView: View {
           .foregroundStyle(Color.white)
           .frame(width: 60, height: 60, alignment: .leading)
           .shadow(radius: 3)
-          .padding(.init(top: 30, leading: 10, bottom: 0, trailing: 0))
+          .padding(.init(top: 20, leading: 20, bottom: 0, trailing: 0))
           
           Spacer()
         }
@@ -60,6 +59,8 @@ struct GameView: View {
       
       // Header
       VStack {
+        Spacer()
+        
         HStack {
           Spacer()
           
@@ -90,11 +91,14 @@ struct GameView: View {
           )
           .padding(.top, -30)
         
-        // Cards
+        Spacer()
         
+        // Cards
         CardStackView(cards: cards, cardAction: {})
           .padding()
         
+        Spacer()
+        Spacer()
         Spacer()
       }
       .padding(.top, 30)
