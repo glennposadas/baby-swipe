@@ -8,23 +8,40 @@
 import SwiftUI
 
 struct CardContainerView: View {
+  // MARK: -
+  // MARK: Properties
+  
+  let data: Swipeable
+  
+  // MARK: -
+  // MARK: Body
+  
   var body: some View {
     RoundedRectangle(cornerRadius: 20)
-      .fill(Color.white)
+      .fill(Color.clear) // make it white if you want an outer card.
       .overlay(
-        VStack(spacing: 10) {
-          Image(systemName: "heart.fill")
-            .font(.system(size: 50))
-            .foregroundColor(.pink)
-          Text("Example Card")
-            .font(.title)
-            .bold()
-          Text("This is an example card with some beautiful UI.")
-            .font(.body)
-            .foregroundColor(.gray)
-        }
+        overlayingContentView
           .padding()
       )
       .shadow(radius: 10)
+  }
+  
+  var overlayingContentView: some View {
+    if let image = data.image {
+      return AnyView(
+        VStack(spacing: 10) {
+          image
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+        }
+      )
+    } else {
+      return AnyView(
+        VStack(spacing: 10) {
+          Text(data.title)
+            .font(.system(size: 60, weight: .bold, design: .rounded))
+        }
+      )
+    }
   }
 }

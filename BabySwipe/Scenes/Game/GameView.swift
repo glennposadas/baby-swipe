@@ -18,10 +18,7 @@ struct GameView: View {
   @Binding var category: Category
   
   let cards: [CardView<CardContainerView>] = [
-    CardView(content: { CardContainerView() }),
-    CardView(content: { CardContainerView() }),
-    CardView(content: { CardContainerView() }),
-    CardView(content: { CardContainerView() })
+    CardView(content: { CardContainerView(data: Shape.allData().first!) })
   ]
   
   // MARK: -
