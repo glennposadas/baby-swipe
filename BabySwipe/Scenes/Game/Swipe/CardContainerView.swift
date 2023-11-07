@@ -17,12 +17,7 @@ struct CardContainerView: View {
   // MARK: Body
   
   var body: some View {
-    RoundedRectangle(cornerRadius: 20)
-      .fill(Color.clear) // make it white if you want an outer card.
-      .overlay(
-        overlayingContentView
-          .padding()
-      )
+    overlayingContentView
       .shadow(radius: 10)
   }
   

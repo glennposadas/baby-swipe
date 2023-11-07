@@ -33,4 +33,15 @@ enum Category: String {
   var icon: Image {
     Image("\(rawValue)")
   }
+  
+  var allData: [Swipeable] {
+    switch self {
+    case .animals: Animal.allData()
+    case .colors: Colour.allData()
+    case .fruits: Fruit.allData()
+    case .letters: Letter.allData()
+    case .numbers: Number.allData()
+    case .shapes: BabySwipe.Shape.allData()
+    }
+  }
 }

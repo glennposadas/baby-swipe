@@ -17,10 +17,6 @@ struct GameView: View {
   @State private var isShowingExitConfirmation = false
   @Binding var category: Category
   
-  let cards: [CardView<CardContainerView>] = [
-    CardView(content: { CardContainerView(data: Shape.allData().first!) })
-  ]
-  
   // MARK: -
   // MARK: Body
   
@@ -91,7 +87,9 @@ struct GameView: View {
         Spacer()
         
         // Cards
-        CardStackView(cards: cards, cardAction: {})
+        CardStackView(cards: getCards(), cardAction: {
+          debugPrint("Card action")
+        }, loopCards: true)
           .padding()
         
         Spacer()
@@ -110,6 +108,15 @@ struct GameView: View {
         },
         secondaryButton: .cancel()
       )
+    }
+  }
+  
+  // MARK: -
+  // MARK: Functions
+  
+  private func getCards() -> [CardView<CardContainerView>] {
+    return category.allData.map { data in
+      CardView(content: { CardContainerView(data: data) })
     }
   }
 }
