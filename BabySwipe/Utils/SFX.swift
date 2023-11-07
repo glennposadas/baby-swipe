@@ -10,11 +10,15 @@ import Foundation
 
 enum SFXType {
   case bgMusic
+  case gaming
   
   var filename: String {
     switch self {
     case .bgMusic:
       return "happy-childhood-loop-173335.mp3"
+    case .gaming:
+      return Int.random(in: 1...2) == 1 ? "alexander-nakarada-silly-intro(chosic.com).mp3"
+      : "funny-accompanying-background-music-for-video-vlogs-one-day-baby-154587.mp3"
     }
   }
 }
@@ -36,6 +40,8 @@ class SFX {
   // MARK: - BG
   
   func playMusic(_ sfxType: SFXType) {
+    stopCurrentMusic()
+    
     let soundFilePath = "\(Bundle.main.resourcePath ?? "")/\(sfxType.filename)"
     let soundFileURL = URL(fileURLWithPath: soundFilePath)
     

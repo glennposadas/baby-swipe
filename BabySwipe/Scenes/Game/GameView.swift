@@ -99,6 +99,9 @@ struct GameView: View {
       .padding(.top, 30)
     }
     .ignoresSafeArea()
+    .onAppear {
+      SFX.shared.playMusic(.gaming)
+    }
     .alert(isPresented: $isShowingExitConfirmation) {
       Alert(
         title: Text("Are you sure you want to exit the game?"),
