@@ -8,18 +8,20 @@
 import SwiftUI
 
 class Fruit: Swipeable {
-
+  
   // MARK: -
   // MARK: Generator
   
   static func allData() -> [Fruit] {
     let fruitNames = [
-      "circle",
-      "heart",
-      "rectangle",
-      "square",
-      "star",
-      "triangle"
+      "apple",
+      "banana",
+      "lemon",
+      "mango",
+      "orange",
+      "pineapple",
+      "strawberry",
+      "watermelon"
     ]
     
     let fruits: [Fruit] = fruitNames.map { name in
@@ -28,5 +30,3 @@ class Fruit: Swipeable {
     return fruits
   }
 }
-
-todo:---
