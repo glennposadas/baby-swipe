@@ -59,7 +59,7 @@ struct HomeView: View {
     .fullScreenCover(isPresented: $presentGame) {
       debugPrint("Dismiss game")
     } content: {
-      GameView(category: $selectedCategory)
+      GameView(category: $selectedCategory, cards: [])
     }
   }
 }
