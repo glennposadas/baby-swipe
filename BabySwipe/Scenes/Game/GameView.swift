@@ -8,6 +8,8 @@
 import Lottie
 import SwiftUI
 
+typealias Card = CardView<CardContainerView>
+
 struct GameView: View {
   
   // MARK: -
@@ -16,6 +18,8 @@ struct GameView: View {
   @Environment(\.dismiss) var dismiss
   @State private var isShowingExitConfirmation = false
   @Binding var category: Category
+  
+  @State var cards: [Card]
   
   // MARK: -
   // MARK: Body
@@ -87,10 +91,13 @@ struct GameView: View {
         Spacer()
         
         // Cards
-        CardStackView(cards: getCards(), cardAction: {
-          debugPrint("Card action")
-        }, loopCards: true)
-          .padding()
+        ZStack {
+          ForEach(cards, id: \.tagId) { card in
+            updateCard(card)
+          }
+        }
+        .padding(.top, 20)
+        .padding(.horizontal, 20.0)
         
         Spacer()
         Spacer()
@@ -101,6 +108,7 @@ struct GameView: View {
     .ignoresSafeArea()
     .onAppear {
       SFX.shared.playMusic(.gaming)
+      loadCards()
     }
     .alert(isPresented: $isShowingExitConfirmation) {
       Alert(
@@ -117,13 +125,59 @@ struct GameView: View {
   // MARK: -
   // MARK: Functions
   
-  private func getCards() -> [CardView<CardContainerView>] {
-    return category.allData.map { data in
-      CardView(content: { CardContainerView(data: data) })
+  private func updateCard(_ card: Card) -> some View {
+    card
+      .animation(.spring(), value: UUID())
+      .zIndex(Double(cards.count - card.index))
+      .offset(x: 0, y: 10 + CGFloat(card.index) * 10)
+      .rotationEffect(.degrees(-(Double(card.index)) * 0.7))
+  }
+  
+  private func getCards() -> [Card] {
+    var cards: [Card] = []
+    for (index, data) in category.allData.enumerated() {
+      cards.append(
+        .init(
+          index: index,
+          tagId: UUID(),
+          swipedLeft: onSwipeLeft(_:),
+          swipedRight: onSwipeRight(_:),
+          content: { CardContainerView(data: data) }
+        )
+      )
+    }
+    
+    return cards
+  }
+  
+  private func loadCards() {
+    cards = getCards()
+  }
+  
+  private func onSwipeLeft(_ tagId: UUID) {
+    debugPrint("onSwipeLeft: \(tagId)")
+    shouldResetCards(tagId)
+  }
+  
+  private func onSwipeRight(_ tagId: UUID) {
+    debugPrint("onSwipeRight: \(tagId)")
+    shouldResetCards(tagId)
+  }
+  
+  // Check if we are on the last card.
+  private func shouldResetCards(_ tagId: UUID) {
+    // Get the last uuid
+    guard let lastUUID = cards.last?.tagId else {
+      return
+    }
+    
+    if tagId == lastUUID {
+      debugPrint("Last card reached. Resetting...")
+      loadCards()
     }
   }
 }
 
 #Preview {
-  GameView(category: .constant(.colors))
+  GameView(category: .constant(.colors), cards: [])
 }

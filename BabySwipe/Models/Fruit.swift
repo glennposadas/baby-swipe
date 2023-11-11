@@ -18,7 +18,7 @@ class Fruit: Swipeable {
       "banana",
       "lemon",
       "mango",
-      "orange",
+      "orange_fruit",
       "pineapple",
       "strawberry",
       "watermelon"
