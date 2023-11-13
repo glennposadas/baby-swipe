@@ -8,12 +8,12 @@
 import SwiftUI
 
 enum Category: String {
+  case shapes
   case animals
   case colors
   case fruits
   case letters
   case numbers
-  case shapes
   
   static var all: [Category] {
     return [

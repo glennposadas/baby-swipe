@@ -37,25 +37,25 @@ struct HomeView: View {
     ZStack(alignment: .bottom) {
       Image("BGImage")
         .resizable()
+        .blur(radius: 2.0)
         .scaledToFill()
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
       ScrollView {
         ForEach(categories, id: \.self) { category in
+          Spacer()
+          
           Button(action: {
             selectedCategory = category
             presentGame.toggle()
             debugPrint("Selected \(selectedCategory.title)")
           }) {
             Cell(category: category)
-              .background(content: {
-                Color.red
-              })
-              .shadow(color: Color.primary.opacity(0.3), radius: 1)
-              .padding(.all, 6)
-              .frame(width: UIScreen.main.bounds.width - 30, height: 150)
+              .frame(width: UIScreen.main.bounds.width - 16, height: 180)
           }
+          .padding(.bottom, 10)
+          
         }
       } // ScrollView
       .padding(.init(top: 0, leading: 0, bottom: 60, trailing: 0))
