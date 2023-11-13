@@ -42,23 +42,8 @@ struct HomeView: View {
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
-      ScrollView {
-        ForEach(categories, id: \.self) { category in
-          Spacer()
-          
-          Button(action: {
-            selectedCategory = category
-            presentGame.toggle()
-            debugPrint("Selected \(selectedCategory.title)")
-          }) {
-            Cell(category: category)
-              .frame(width: UIScreen.main.bounds.width - 16, height: 180)
-          }
-          .padding(.bottom, 10)
-          
-        }
-      } // ScrollView
-      .padding(.init(top: 0, leading: 0, bottom: 60, trailing: 0))
+      scrollView()
+        .padding(.init(top: 0, leading: 0, bottom: 60, trailing: 0))
       
       //      AdMobRectangleView(adBannerType: .home)
     }
@@ -66,6 +51,55 @@ struct HomeView: View {
       debugPrint("Dismiss game")
     } content: {
       GameView(category: $selectedCategory, cards: [])
+    }
+  }
+  
+  private func scrollView() -> some View {
+    if #available(iOS 17.0, *) {
+      return ScrollView {
+        ForEach(categories, id: \.self) { category in
+          cell(for: category)
+        }
+      } // ScrollView
+      .scrollTargetBehavior(.viewAligned)
+      .scrollIndicators(.hidden)
+      
+    } else {
+      return ScrollView {
+        ForEach(categories, id: \.self) { category in
+          cell(for: category)
+        }
+      } // ScrollView
+    }
+  }
+  
+  private func cell(for category: Category) -> some View {
+    if #available(iOS 17.0, *) {
+      return Button(action: {
+        selectedCategory = category
+        presentGame.toggle()
+        debugPrint("Selected \(selectedCategory.title)")
+      }) {
+        Cell(category: category)
+          .frame(width: UIScreen.main.bounds.width - 16, height: 200)
+          .scrollTransition(.interactive,
+                            axis: .vertical) { effect, phase in
+            effect
+              .scaleEffect(phase.isIdentity ? 1 : 0.8)
+          }
+      }
+      .padding(.vertical, 5)
+      
+    } else {
+      return Button(action: {
+        selectedCategory = category
+        presentGame.toggle()
+        debugPrint("Selected \(selectedCategory.title)")
+      }) {
+        Cell(category: category)
+          .frame(width: UIScreen.main.bounds.width - 16, height: 180)
+      }
+      .padding(.vertical, 10)
     }
   }
 }

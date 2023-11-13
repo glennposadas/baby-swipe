@@ -31,6 +31,7 @@ struct GameView: View {
       // Background
       Image("BGImage")
         .resizable()
+        .blur(radius: 2.0)
         .scaledToFill()
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
@@ -41,7 +42,8 @@ struct GameView: View {
             isShowingExitConfirmation = true
           }, label: {
             Image(systemName: "xmark.circle.fill")
-              .font(.system(size: 40))
+              .font(.largeTitle)
+              .foregroundStyle(Color.white)
           })
           .foregroundStyle(Color.white)
           .frame(width: 60, height: 60, alignment: .leading)
@@ -57,20 +59,6 @@ struct GameView: View {
       // Header
       VStack {
         Spacer()
-        
-        HStack {
-          Spacer()
-          
-          // Main Logo For Banner
-          Image("MainLogo")
-            .resizable()
-            .scaledToFit()
-            .frame(maxHeight: 130)
-            .padding()
-          
-          Spacer()
-        }
-        .padding()
         
         // Subtitle
         Text(category.title.uppercased())
