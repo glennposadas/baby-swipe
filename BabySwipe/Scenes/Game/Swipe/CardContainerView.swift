@@ -23,21 +23,19 @@ struct CardContainerView: View {
   }
   
   var overlayingContentView: some View {
-    if let image = data.image {
-      return AnyView(
-        VStack(spacing: 10) {
-          image
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-        }
-      )
-    } else {
-      return AnyView(
-        VStack(spacing: 10) {
-          Text(data.title)
-            .font(.system(size: 60, weight: .bold, design: .rounded))
-        }
-      )
-    }
+    return AnyView(
+      VStack(spacing: 10) {
+        
+        RoundedRectangle(cornerRadius: 20)
+          .fill(Color.white)
+          .overlay(
+            data.image
+              .resizable()
+              .aspectRatio(contentMode: .fit)
+              .padding()
+          )
+          .shadow(radius: 10)
+      }
+    )
   }
 }
