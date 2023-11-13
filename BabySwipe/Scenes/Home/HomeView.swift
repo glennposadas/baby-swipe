@@ -13,6 +13,8 @@ struct HomeView: View {
   // MARK: -
   // MARK: Properties
   
+  @Environment(\.dismiss) var dismiss
+  
   @State private var selectedCategory: Category = .animals
   @State private var presentGame: Bool = false
   
@@ -25,34 +27,38 @@ struct HomeView: View {
     ZStack {
       NavBarView {
         contentView
+      } homeTapped: {
+        dismiss()
       }
     }
   }
   
   var contentView: some View {
     ZStack(alignment: .bottom) {
+      Image("BGImage")
+        .resizable()
+        .scaledToFill()
+        .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
+        .edgesIgnoringSafeArea(.all)
+      
       ScrollView {
-        LazyVGrid(columns: Array(repeating: .init(.flexible()),
-                                 count: UIDevice.current.userInterfaceIdiom == .pad ? 4 : 2)) {
-          ForEach(categories, id: \.self) { category in
-            Button(action: {
-              selectedCategory = category
-              presentGame.toggle()
-              debugPrint("Selected \(selectedCategory.title)")
-            }) {
-              Cell(category: category)
-                .scaledToFill()
-                .shadow(color: Color.primary.opacity(0.3), radius: 1)
-                .overlay(
-                  RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.black, lineWidth: 3)
-                )
-                .padding(.all, 6)
-            }
-          } // ForEach
-        } // LazyVGrid
+        ForEach(categories, id: \.self) { category in
+          Button(action: {
+            selectedCategory = category
+            presentGame.toggle()
+            debugPrint("Selected \(selectedCategory.title)")
+          }) {
+            Cell(category: category)
+              .background(content: {
+                Color.red
+              })
+              .shadow(color: Color.primary.opacity(0.3), radius: 1)
+              .padding(.all, 6)
+              .frame(width: UIScreen.main.bounds.width - 30, height: 150)
+          }
+        }
       } // ScrollView
-      .padding(.init(top: 10, leading: 0, bottom: 60, trailing: 0))
+      .padding(.init(top: 0, leading: 0, bottom: 60, trailing: 0))
       
       //      AdMobRectangleView(adBannerType: .home)
     }

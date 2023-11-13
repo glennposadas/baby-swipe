@@ -10,6 +10,7 @@ import SwiftUI
 struct NavBarView<Content>: View where Content: View {
   
   let content: () -> Content
+  let homeTapped: () -> (Void)
   
   var body: some View {
     NavigationView {
@@ -21,11 +22,30 @@ struct NavBarView<Content>: View where Content: View {
                 Color.bgColor
                 VStack {
                   Spacer()
-                  Image("MainLogo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .padding(.bottom, 20)
+                  
+                  ZStack {
+                    HStack(alignment: .center) {
+                      
+                      Button(action: homeTapped,
+                             label: {
+                        Image(systemName: "house.circle")
+                          .font(.largeTitle)
+                          .foregroundStyle(Color.white)
+                      })
+                      .padding(.leading, 16)
+                      
+                      Spacer()
+                    }
+                    
+                    Image("MainLogo")
+                      .resizable()
+                      .scaledToFit()
+                      .frame(height: 50, alignment: .center)
+                      .padding(.bottom, 20)
+                    
+                    Spacer()
+                  }
+                  
                 }
               }
             }
@@ -39,6 +59,7 @@ struct NavBarView<Content>: View where Content: View {
           .padding(.top, 70)
       }
       .navigationBarTitleDisplayMode(.inline)
+      .shadow(radius: 5)
     }
   }
 }
@@ -46,7 +67,9 @@ struct NavBarView<Content>: View where Content: View {
 #Preview {
   NavBarView {
     List(1..<21, id: \.self) { number in
-        Text("Content \(number)")
+        Text("Content, \(number)")
     }
+  } homeTapped: {
+    debugPrint("Home tapped")
   }
 }
