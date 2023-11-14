@@ -18,6 +18,8 @@ struct HomeView: View {
   @State private var selectedCategory: Category = .animals
   @State private var presentGame: Bool = false
   
+  @StateObject private var interstitialController = InterstitialController()
+  
   private var categories = Category.all
   
   // MARK: -
@@ -48,8 +50,13 @@ struct HomeView: View {
     }
     .fullScreenCover(isPresented: $presentGame) {
       debugPrint("Dismiss game")
+      interstitialController.displayInterstitialAd()
     } content: {
       GameView(category: $selectedCategory, cards: [])
+    }
+    .onAppear {
+      debugPrint("On Appear, home view")
+      interstitialController.loadInterstitialAd()
     }
   }
   
