@@ -61,7 +61,7 @@ struct HomeView: View {
         ForEach(categories, id: \.title) { category in
           cell(for: category)
             .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
-            .padding(.vertical, isIpad ? 40 : 20)
+            .padding(.vertical, isIpad ? 40 : 10)
 
         }
         
@@ -78,10 +78,11 @@ struct HomeView: View {
         ForEach(categories, id: \.title) { category in
           cell(for: category)
             .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
-            .padding(.vertical, isIpad ? 40 : 20)
-
-          Spacer().frame(height: 180)
+            .padding(.vertical, isIpad ? 40 : 10)
         }
+        
+        Spacer().frame(height: 180)
+
       } // ScrollView
     }
   }
