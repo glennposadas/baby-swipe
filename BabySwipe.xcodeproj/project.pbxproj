@@ -20,6 +20,8 @@
 		454E2CD72A8C6F7D00D2FDE0 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E2CD62A8C6F7D00D2FDE0 /* SplashView.swift */; };
 		454E2CD92A8C6F7E00D2FDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */; };
 		454E2CDC2A8C6F7E00D2FDE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */; };
+		455855B72B03F1C200F3EEF4 /* InterstitialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455855B62B03F1C200F3EEF4 /* InterstitialController.swift */; };
+		455855B92B03F26D00F3EEF4 /* UIApplication+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455855B82B03F26D00F3EEF4 /* UIApplication+KeyWindow.swift */; };
 		456EA5712AF34908003D7030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EA5702AF34908003D7030 /* AppDelegate.swift */; };
 		456EA5742AF34E09003D7030 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 456EA5732AF34E09003D7030 /* FirebaseAnalytics */; };
 		456EA5762AF34E09003D7030 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 456EA5752AF34E09003D7030 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -81,6 +83,8 @@
 		454E2CD82A8C6F7E00D2FDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		455855B52B03EFA800F3EEF4 /* BabySwipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabySwipe.entitlements; sourceTree = "<group>"; };
+		455855B62B03F1C200F3EEF4 /* InterstitialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialController.swift; sourceTree = "<group>"; };
+		455855B82B03F26D00F3EEF4 /* UIApplication+KeyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+KeyWindow.swift"; sourceTree = "<group>"; };
 		456EA56F2AF3464D003D7030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		456EA5702AF34908003D7030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456EA5882AF35AE9003D7030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				45418DD12AF6613B00EF2C83 /* AdTypes.swift */,
 				45418DCD2AF65FEE00EF2C83 /* AdMobRectangleView.swift */,
 				45418DCF2AF6611B00EF2C83 /* BannerViewController.swift */,
+				455855B62B03F1C200F3EEF4 /* InterstitialController.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				45DD47AA2A9556570015D06A /* Delay.swift */,
 				45FC92952AF4F1CF00C085DD /* SFX.swift */,
 				45418DCA2AF63D3F00EF2C83 /* Color+App.swift */,
+				455855B82B03F26D00F3EEF4 /* UIApplication+KeyWindow.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -554,6 +560,8 @@
 				452CE8E42AF7B39000F1D38E /* CardContainerView.swift in Sources */,
 				45ABD6482AF8A00E00C4AD1F /* Colour.swift in Sources */,
 				45418DCB2AF63D3F00EF2C83 /* Color+App.swift in Sources */,
+				455855B72B03F1C200F3EEF4 /* InterstitialController.swift in Sources */,
+				455855B92B03F26D00F3EEF4 /* UIApplication+KeyWindow.swift in Sources */,
 				45418DCE2AF65FEE00EF2C83 /* AdMobRectangleView.swift in Sources */,
 				45FC92912AF4A7A900C085DD /* AnimatedCharacterView.swift in Sources */,
 				45FC92882AF44B7C00C085DD /* IntroView.swift in Sources */,
