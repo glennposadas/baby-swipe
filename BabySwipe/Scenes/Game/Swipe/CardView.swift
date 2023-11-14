@@ -60,13 +60,14 @@ struct CardView<Content: View>: View {
   // MARK: - Methods
   
   public func handleSwipe(width: CGFloat) {
+    debugPrint("handleSwipe -> \(width)")
     switch width {
-    case -500...(-150):
+    case -(isIpad ? 900 : 500)...(-150):
       swipedLeft?(tagId)
       offset = CGSize(width: -500, height: 0)
       isRemoved = true // set isRemoved to true
       // You can also update the views from here. E.g. colors.
-    case 150...500:
+    case 150...(isIpad ? 900 : 500):
       swipedRight?(tagId)
       offset = CGSize(width: 500, height: 0)
       isRemoved = true // set isRemoved to true

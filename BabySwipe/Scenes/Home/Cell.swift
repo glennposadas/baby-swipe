@@ -21,7 +21,7 @@ struct Cell: View {
       .overlay {
         VStack {
           Text(category.title.uppercased())
-            .font(.custom("Kinderland", size: 30))
+            .font(.custom("Kinderland", size: isIpad ? 70 : 35))
             .foregroundStyle(.white)
             .padding(.all, 10)
             .background(

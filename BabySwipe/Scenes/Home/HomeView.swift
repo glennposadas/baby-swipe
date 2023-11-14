@@ -29,7 +29,7 @@ struct HomeView: View {
         contentView
       } homeTapped: {
         dismiss()
-      }
+      }.navigationViewStyle(StackNavigationViewStyle())
     }
   }
   
@@ -56,11 +56,12 @@ struct HomeView: View {
   private func scrollView() -> some View {
     if #available(iOS 17.0, *) {
       return ScrollView {
-        Spacer().frame(height: 20)
+        Spacer().frame(height: 30)
         
         ForEach(categories, id: \.title) { category in
           cell(for: category)
-            .padding(.vertical, 20)
+            .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
+            .padding(.vertical, isIpad ? 40 : 20)
 
         }
         
@@ -74,9 +75,10 @@ struct HomeView: View {
       return ScrollView {
         Spacer().frame(height: 20)
 
-        ForEach(categories, id: \.self) { category in
+        ForEach(categories, id: \.title) { category in
           cell(for: category)
-            .padding(.vertical, 20)
+            .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
+            .padding(.vertical, isIpad ? 40 : 20)
 
           Spacer().frame(height: 180)
         }
@@ -92,13 +94,13 @@ struct HomeView: View {
         debugPrint("Selected \(selectedCategory.title)")
       }) {
         Cell(category: category)
-          .frame(width: UIScreen.main.bounds.width - 16, height: 180)
           .scrollTransition(.interactive,
                             axis: .vertical) { effect, phase in
             effect
               .scaleEffect(phase.isIdentity ? 1 : 0.8)
           }
       }
+
     } else {
       return Button(action: {
         selectedCategory = category
@@ -106,7 +108,6 @@ struct HomeView: View {
         debugPrint("Selected \(selectedCategory.title)")
       }) {
         Cell(category: category)
-          .frame(width: UIScreen.main.bounds.width - 16, height: 180)
       }
     }
   }
