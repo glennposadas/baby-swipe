@@ -29,7 +29,7 @@ struct HomeView: View {
         contentView
       } homeTapped: {
         dismiss()
-      }
+      }.navigationViewStyle(StackNavigationViewStyle())
     }
   }
   
@@ -37,28 +37,12 @@ struct HomeView: View {
     ZStack(alignment: .bottom) {
       Image("BGImage")
         .resizable()
+        .blur(radius: 2.0)
         .scaledToFill()
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
-      ScrollView {
-        ForEach(categories, id: \.self) { category in
-          Button(action: {
-            selectedCategory = category
-            presentGame.toggle()
-            debugPrint("Selected \(selectedCategory.title)")
-          }) {
-            Cell(category: category)
-              .background(content: {
-                Color.red
-              })
-              .shadow(color: Color.primary.opacity(0.3), radius: 1)
-              .padding(.all, 6)
-              .frame(width: UIScreen.main.bounds.width - 30, height: 150)
-          }
-        }
-      } // ScrollView
-      .padding(.init(top: 0, leading: 0, bottom: 60, trailing: 0))
+      scrollView()
       
       //      AdMobRectangleView(adBannerType: .home)
     }
@@ -66,6 +50,66 @@ struct HomeView: View {
       debugPrint("Dismiss game")
     } content: {
       GameView(category: $selectedCategory, cards: [])
+    }
+  }
+  
+  private func scrollView() -> some View {
+    if #available(iOS 17.0, *) {
+      return ScrollView {
+        Spacer().frame(height: 30)
+        
+        ForEach(categories, id: \.title) { category in
+          cell(for: category)
+            .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
+            .padding(.vertical, isIpad ? 40 : 10)
+
+        }
+        
+        Spacer().frame(height: 180)
+        
+      } // ScrollView
+      .scrollTargetBehavior(.viewAligned)
+      .scrollIndicators(.hidden)
+      
+    } else {
+      return ScrollView {
+        Spacer().frame(height: 20)
+
+        ForEach(categories, id: \.title) { category in
+          cell(for: category)
+            .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
+            .padding(.vertical, isIpad ? 40 : 10)
+        }
+        
+        Spacer().frame(height: 180)
+
+      } // ScrollView
+    }
+  }
+  
+  private func cell(for category: Category) -> some View {
+    if #available(iOS 17.0, *) {
+      return Button(action: {
+        selectedCategory = category
+        presentGame.toggle()
+        debugPrint("Selected \(selectedCategory.title)")
+      }) {
+        Cell(category: category)
+          .scrollTransition(.interactive,
+                            axis: .vertical) { effect, phase in
+            effect
+              .scaleEffect(phase.isIdentity ? 1 : 0.8)
+          }
+      }
+
+    } else {
+      return Button(action: {
+        selectedCategory = category
+        presentGame.toggle()
+        debugPrint("Selected \(selectedCategory.title)")
+      }) {
+        Cell(category: category)
+      }
     }
   }
 }

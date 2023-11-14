@@ -13,26 +13,23 @@ class Colour: Swipeable {
   // MARK: Generator
   
   static func allData() -> [Colour] {
-    return [
-      .init(title: "Red"),
-      .init(title: "Green"),
-      .init(title: "Blue"),
-      .init(title: "Black"),
-      .init(title: "Brown"),
-      .init(title: "Gray"),
-      .init(title: "Pink"),
-      .init(title: "Orange"),
-      .init(title: "Purple"),
-      .init(title: "Yellow")
+    let colorNames = [
+      "Red",
+      "Green",
+      "Blue",
+      "Black",
+      "Brown",
+      "Gray",
+      "Pink",
+      "Orange",
+      "Purple",
+      "Yellow"
     ]
-  }
-  
-  // MARK: -
-  // MARK: Init
-  
-  init(title: String) {
-    super.init(title: title, image: nil)
-    self.image = Image(title.lowercased())
+    
+    let colors: [Colour] = colorNames.map { name in
+      return .init(title: name.uppercased(), image: Image(name.lowercased()))
+    }
+    return colors
   }
 }
 

@@ -31,17 +31,20 @@ struct GameView: View {
       // Background
       Image("BGImage")
         .resizable()
+        .blur(radius: 2.0)
         .scaledToFill()
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
+      // Close Button
       HStack(alignment: .center, spacing: 0) {
         VStack {
           Button(action: {
             isShowingExitConfirmation = true
           }, label: {
             Image(systemName: "xmark.circle.fill")
-              .font(.system(size: 40))
+              .font(.largeTitle)
+              .foregroundStyle(Color.white)
           })
           .foregroundStyle(Color.white)
           .frame(width: 60, height: 60, alignment: .leading)
@@ -49,32 +52,19 @@ struct GameView: View {
           .padding(.init(top: 20, leading: 20, bottom: 0, trailing: 0))
           
           Spacer()
+          Spacer()
         }
         
         Spacer()
       }
       
-      // Header
-      VStack {
+      // Cards and Header Subtitle
+      VStack(spacing: 20) {
         Spacer()
-        
-        HStack {
-          Spacer()
-          
-          // Main Logo For Banner
-          Image("MainLogo")
-            .resizable()
-            .scaledToFit()
-            .frame(maxHeight: 130)
-            .padding()
-          
-          Spacer()
-        }
-        .padding()
         
         // Subtitle
         Text(category.title.uppercased())
-          .font(.custom("Kinderland", size: 18))
+          .font(.custom("Kinderland", size: 30))
           .foregroundStyle(.white)
           .padding(.all, 8)
           .background(
@@ -86,24 +76,16 @@ struct GameView: View {
           .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(Color.white, lineWidth: 2)
           )
-          .padding(.top, -30)
-        
-        Spacer()
-        
-        // Cards
+
+          // Cards
         ZStack {
           ForEach(cards, id: \.tagId) { card in
             updateCard(card)
           }
         }
-        .padding(.top, 20)
-        .padding(.horizontal, 20.0)
         
         Spacer()
-        Spacer()
-        Spacer()
       }
-      .padding(.top, 30)
     }
     .ignoresSafeArea()
     .onAppear {
@@ -129,8 +111,8 @@ struct GameView: View {
     card
       .animation(.spring(), value: UUID())
       .zIndex(Double(cards.count - card.index))
-      .offset(x: 0, y: 10 + CGFloat(card.index) * 10)
-      .rotationEffect(.degrees(-(Double(card.index)) * 0.7))
+      .offset(x: 0, y: CGFloat(card.index) * 3)
+      .rotationEffect(.degrees(-(Double(card.index)) * 0.2))
   }
   
   private func getCards() -> [Card] {
@@ -179,5 +161,5 @@ struct GameView: View {
 }
 
 #Preview {
-  GameView(category: .constant(.colors), cards: [])
+  GameView(category: .constant(.fruits), cards: [])
 }

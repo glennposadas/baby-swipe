@@ -39,10 +39,10 @@ struct CardView<Content: View>: View {
   public var body: some View {
     ZStack {
       content()
-        .frame(width: 320, height: 420)
+        .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.height - 250)
     }
     .offset(x: offset.width * 1, y: offset.height * 0.4)
-    .rotationEffect(.degrees(Double(offset.width / 40)))
+    .rotationEffect(.degrees(Double(offset.width / 10)))
     .gesture(
       DragGesture()
         .onChanged { gesture in
@@ -60,13 +60,14 @@ struct CardView<Content: View>: View {
   // MARK: - Methods
   
   public func handleSwipe(width: CGFloat) {
+    debugPrint("handleSwipe -> \(width)")
     switch width {
-    case -500...(-150):
+    case -(isIpad ? 900 : 500)...(-150):
       swipedLeft?(tagId)
       offset = CGSize(width: -500, height: 0)
       isRemoved = true // set isRemoved to true
       // You can also update the views from here. E.g. colors.
-    case 150...500:
+    case 150...(isIpad ? 900 : 500):
       swipedRight?(tagId)
       offset = CGSize(width: 500, height: 0)
       isRemoved = true // set isRemoved to true

@@ -8,12 +8,12 @@
 import SwiftUI
 
 enum Category: String {
+  case shapes
   case animals
   case colors
   case fruits
   case letters
   case numbers
-  case shapes
   
   static var all: [Category] {
     return [
@@ -31,7 +31,7 @@ enum Category: String {
   }
   
   var icon: Image {
-    Image("\(rawValue)")
+    Image(rawValue)
   }
   
   var allData: [Swipeable] {

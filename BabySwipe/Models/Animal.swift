@@ -23,7 +23,7 @@ class Animal: Swipeable {
     ]
     
     let animals: [Animal] = animalNames.map { name in
-      return .init(title: name.uppercased(), image: Image("\(name)"))
+      return .init(title: name.uppercased(), image: Image(name))
     }
     return animals
   }

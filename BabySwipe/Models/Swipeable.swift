@@ -13,12 +13,12 @@ class Swipeable {
   // MARK: Properties
   
   var title: String = ""
-  var image: Image?
+  var image: Image
   
   // MARK: -
   // MARK: Functions
   
-  init(title: String!, image: Image? = nil) {
+  init(title: String, image: Image) {
     self.title = title
     self.image = image
   }

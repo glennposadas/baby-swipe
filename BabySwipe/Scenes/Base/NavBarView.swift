@@ -59,6 +59,7 @@ struct NavBarView<Content>: View where Content: View {
           .padding(.top, 70)
       }
       .navigationBarTitleDisplayMode(.inline)
+      .navigationViewStyle(StackNavigationViewStyle())
       .shadow(radius: 5)
     }
   }
