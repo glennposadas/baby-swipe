@@ -19,22 +19,18 @@ struct CardContainerView: View {
   
   var body: some View {
     overlayingContentView
-      .shadow(radius: 10)
   }
   
   var overlayingContentView: some View {
     return AnyView(
-      VStack(spacing: 10) {
-        
+      ZStack {
         RoundedRectangle(cornerRadius: 20)
           .fill(Color.white)
-          .overlay(
-            data.image
-              .resizable()
-              .aspectRatio(contentMode: .fit)
-              .padding()
-          )
-          .shadow(radius: 10)
+          .shadow(radius: 6)
+        data.image
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .padding()
       }
     )
   }

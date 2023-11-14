@@ -43,7 +43,6 @@ struct HomeView: View {
         .edgesIgnoringSafeArea(.all)
       
       scrollView()
-        .padding(.init(top: 0, leading: 0, bottom: 60, trailing: 0))
       
       //      AdMobRectangleView(adBannerType: .home)
     }
@@ -81,14 +80,14 @@ struct HomeView: View {
         debugPrint("Selected \(selectedCategory.title)")
       }) {
         Cell(category: category)
-          .frame(width: UIScreen.main.bounds.width - 16, height: 200)
+          .frame(width: UIScreen.main.bounds.width - 16, height: 180)
           .scrollTransition(.interactive,
                             axis: .vertical) { effect, phase in
             effect
               .scaleEffect(phase.isIdentity ? 1 : 0.8)
           }
       }
-      .padding(.vertical, 5)
+      .padding(.top, 10)
       
     } else {
       return Button(action: {

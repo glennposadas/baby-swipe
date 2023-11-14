@@ -117,8 +117,8 @@ struct GameView: View {
     card
       .animation(.spring(), value: UUID())
       .zIndex(Double(cards.count - card.index))
-      .offset(x: 0, y: 10 + CGFloat(card.index) * 10)
-      .rotationEffect(.degrees(-(Double(card.index)) * 0.7))
+      .offset(x: 0, y: CGFloat(card.index) * 3)
+      .rotationEffect(.degrees(-(Double(card.index)) * 0.2))
   }
   
   private func getCards() -> [Card] {
@@ -167,5 +167,5 @@ struct GameView: View {
 }
 
 #Preview {
-  GameView(category: .constant(.colors), cards: [])
+  GameView(category: .constant(.numbers), cards: [])
 }

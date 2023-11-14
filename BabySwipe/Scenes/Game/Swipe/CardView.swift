@@ -42,7 +42,7 @@ struct CardView<Content: View>: View {
         .frame(width: 320, height: 420)
     }
     .offset(x: offset.width * 1, y: offset.height * 0.4)
-    .rotationEffect(.degrees(Double(offset.width / 40)))
+    .rotationEffect(.degrees(Double(offset.width / 10)))
     .gesture(
       DragGesture()
         .onChanged { gesture in
