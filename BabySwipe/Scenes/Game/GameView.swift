@@ -167,5 +167,5 @@ struct GameView: View {
 }
 
 #Preview {
-  GameView(category: .constant(.numbers), cards: [])
+  GameView(category: .constant(.fruits), cards: [])
 }

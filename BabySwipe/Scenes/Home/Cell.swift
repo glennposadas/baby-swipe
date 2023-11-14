@@ -15,7 +15,7 @@ struct Cell: View {
     category.icon
       .resizable()
       .scaledToFill()
-      .frame(minWidth: 0, maxWidth: .infinity)
+      .clipped()
       .cornerRadius(10)
       .shadow(color: Color.primary.opacity(0.3), radius: 1)
       .overlay {

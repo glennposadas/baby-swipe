@@ -39,7 +39,7 @@ struct CardView<Content: View>: View {
   public var body: some View {
     ZStack {
       content()
-        .frame(width: 320, height: 420)
+        .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.height - 200)
     }
     .offset(x: offset.width * 1, y: offset.height * 0.4)
     .rotationEffect(.degrees(Double(offset.width / 10)))

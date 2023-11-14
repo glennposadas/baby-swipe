@@ -56,17 +56,29 @@ struct HomeView: View {
   private func scrollView() -> some View {
     if #available(iOS 17.0, *) {
       return ScrollView {
-        ForEach(categories, id: \.self) { category in
+        Spacer().frame(height: 20)
+        
+        ForEach(categories, id: \.title) { category in
           cell(for: category)
+            .padding(.vertical, 20)
+
         }
+        
+        Spacer().frame(height: 180)
+        
       } // ScrollView
       .scrollTargetBehavior(.viewAligned)
       .scrollIndicators(.hidden)
       
     } else {
       return ScrollView {
+        Spacer().frame(height: 20)
+
         ForEach(categories, id: \.self) { category in
           cell(for: category)
+            .padding(.vertical, 20)
+
+          Spacer().frame(height: 180)
         }
       } // ScrollView
     }
@@ -87,8 +99,6 @@ struct HomeView: View {
               .scaleEffect(phase.isIdentity ? 1 : 0.8)
           }
       }
-      .padding(.top, 10)
-      
     } else {
       return Button(action: {
         selectedCategory = category
@@ -98,7 +108,6 @@ struct HomeView: View {
         Cell(category: category)
           .frame(width: UIScreen.main.bounds.width - 16, height: 180)
       }
-      .padding(.vertical, 10)
     }
   }
 }
