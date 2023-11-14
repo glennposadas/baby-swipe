@@ -69,9 +69,9 @@ struct HomeView: View {
       Spacer().frame(height: 30)
       
       ForEach(categories, id: \.title) { category in
-        cell(for: category)
+        cellWithModifier(for: category)
           .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 250 : 180)
-          .padding(.vertical, isIpad ? 40 : 10)
+          .padding(.vertical, isIpad ? 50 : 16)
 
       }
       
