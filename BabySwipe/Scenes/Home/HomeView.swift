@@ -42,9 +42,9 @@ struct HomeView: View {
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
-      scrollView()
+      scrollViewWithModifier()
       
-      //      AdMobRectangleView(adBannerType: .home)
+      AdMobRectangleView(adBannerType: .home)
     }
     .fullScreenCover(isPresented: $presentGame) {
       debugPrint("Dismiss game")
@@ -53,63 +53,52 @@ struct HomeView: View {
     }
   }
   
-  private func scrollView() -> some View {
+  private func scrollViewWithModifier() -> some View {
     if #available(iOS 17.0, *) {
-      return ScrollView {
-        Spacer().frame(height: 30)
-        
-        ForEach(categories, id: \.title) { category in
-          cell(for: category)
-            .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
-            .padding(.vertical, isIpad ? 40 : 10)
-
-        }
-        
-        Spacer().frame(height: 180)
-        
-      } // ScrollView
-      .scrollTargetBehavior(.viewAligned)
-      .scrollIndicators(.hidden)
+      return scrollView()
+        .scrollTargetBehavior(.viewAligned)
+        .scrollIndicators(.hidden)
       
     } else {
-      return ScrollView {
-        Spacer().frame(height: 20)
+      return scrollView()
+    }
+  }
+  
+  private func scrollView() -> some View {
+    return ScrollView {
+      Spacer().frame(height: 30)
+      
+      ForEach(categories, id: \.title) { category in
+        cellWithModifier(for: category)
+          .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 250 : 180)
+          .padding(.vertical, isIpad ? 50 : 16)
 
-        ForEach(categories, id: \.title) { category in
-          cell(for: category)
-            .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 300 : 180)
-            .padding(.vertical, isIpad ? 40 : 10)
-        }
-        
-        Spacer().frame(height: 180)
-
-      } // ScrollView
+      }
+      
+      Spacer().frame(height: 100)
+    }
+  }
+  
+  private func cellWithModifier(for category: Category) -> some View {
+    return Button(action: {
+      selectedCategory = category
+      presentGame.toggle()
+      debugPrint("Selected \(selectedCategory.title)")
+    }) {
+      cell(for: category)
     }
   }
   
   private func cell(for category: Category) -> some View {
     if #available(iOS 17.0, *) {
-      return Button(action: {
-        selectedCategory = category
-        presentGame.toggle()
-        debugPrint("Selected \(selectedCategory.title)")
-      }) {
-        Cell(category: category)
-          .scrollTransition(.interactive,
-                            axis: .vertical) { effect, phase in
-            effect
-              .scaleEffect(phase.isIdentity ? 1 : 0.8)
-          }
-      }
-
+      return Cell(category: category)
+        .scrollTransition(.interactive,
+                          axis: .vertical) { effect, phase in
+          effect
+            .scaleEffect(phase.isIdentity ? 1 : 0.8)
+        }
     } else {
-      return Button(action: {
-        selectedCategory = category
-        presentGame.toggle()
-        debugPrint("Selected \(selectedCategory.title)")
-      }) {
-        Cell(category: category)
-      }
+      return Cell(category: category)
     }
   }
 }

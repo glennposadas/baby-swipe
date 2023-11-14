@@ -93,10 +93,10 @@ struct IntroView: View {
               ZStack {
                 Circle()
                   .fill(Color.bgColor)
-                  .frame(width: 60, height: 60)
+                  .frame(width: 50, height: 50)
                   .overlay(
                     Image(systemName: mainSoundSettingIsOn ? "speaker.wave.1.fill" : "speaker.slash.fill")
-                      .font(.system(size: 30))
+                      .font(.largeTitle)
                       .foregroundColor(.white)
                       .aspectRatio(contentMode: .fill)
                   )

@@ -1,4 +1,4 @@
-platform :ios, '15.0'
+platform :ios, '16.2'
 
 target 'BabySwipe' do
   use_frameworks!
