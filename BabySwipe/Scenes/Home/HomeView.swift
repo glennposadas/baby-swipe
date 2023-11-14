@@ -44,7 +44,7 @@ struct HomeView: View {
       
       scrollViewWithModifier()
       
-      //      AdMobRectangleView(adBannerType: .home)
+      AdMobRectangleView(adBannerType: .home)
     }
     .fullScreenCover(isPresented: $presentGame) {
       debugPrint("Dismiss game")
@@ -75,7 +75,7 @@ struct HomeView: View {
 
       }
       
-      Spacer().frame(height: 180)
+      Spacer().frame(height: 100)
     }
   }
   
