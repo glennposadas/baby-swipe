@@ -15,7 +15,7 @@ class Number: Swipeable {
   static func allData() -> [Number] {
     let numbers: [Number] = (1...10).map { number in
       let title = "\(number)"
-      return Number(title: title)
+      return Number(title: title, image: .init(title))
     }
     
     return numbers

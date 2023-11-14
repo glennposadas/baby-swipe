@@ -25,7 +25,7 @@ class Fruit: Swipeable {
     ]
     
     let fruits: [Fruit] = fruitNames.map { name in
-      return .init(title: name.uppercased(), image: Image("\(name)"))
+      return .init(title: name.uppercased(), image: Image(name))
     }
     return fruits
   }

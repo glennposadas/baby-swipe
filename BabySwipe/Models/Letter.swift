@@ -16,7 +16,7 @@ class Letter: Swipeable {
     let letters: [Letter] = (0..<26).map { index in
       let character = Character(UnicodeScalar(UInt8(65 + index))) // 65 is the ASCII value for 'A'
       let title = "\(character)\(character.lowercased())"
-      return Letter(title: title)
+      return Letter(title: title, image: .init(title))
     }
     
     return letters

@@ -23,7 +23,7 @@ class Shape: Swipeable {
     ]
     
     let shapes: [Shape] = shapeNames.map { name in
-      return .init(title: name.uppercased(), image: Image("\(name)"))
+      return .init(title: name.uppercased(), image: Image(name))
     }
     return shapes
   }

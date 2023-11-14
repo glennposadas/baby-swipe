@@ -31,7 +31,7 @@ enum Category: String {
   }
   
   var icon: Image {
-    Image("\(rawValue)")
+    Image(rawValue)
   }
   
   var allData: [Swipeable] {
