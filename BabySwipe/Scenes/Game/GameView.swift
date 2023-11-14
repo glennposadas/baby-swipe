@@ -36,6 +36,7 @@ struct GameView: View {
         .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
       
+      // Close Button
       HStack(alignment: .center, spacing: 0) {
         VStack {
           Button(action: {
@@ -51,18 +52,19 @@ struct GameView: View {
           .padding(.init(top: 20, leading: 20, bottom: 0, trailing: 0))
           
           Spacer()
+          Spacer()
         }
         
         Spacer()
       }
       
-      // Header
-      VStack {
+      // Cards and Header Subtitle
+      VStack(spacing: 20) {
         Spacer()
         
         // Subtitle
         Text(category.title.uppercased())
-          .font(.custom("Kinderland", size: 18))
+          .font(.custom("Kinderland", size: 30))
           .foregroundStyle(.white)
           .padding(.all, 8)
           .background(
@@ -74,24 +76,16 @@ struct GameView: View {
           .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(Color.white, lineWidth: 2)
           )
-          .padding(.top, -30)
-        
-        Spacer()
-        
-        // Cards
+
+          // Cards
         ZStack {
           ForEach(cards, id: \.tagId) { card in
             updateCard(card)
           }
         }
-        .padding(.top, 20)
-        .padding(.horizontal, 20.0)
         
         Spacer()
-        Spacer()
-        Spacer()
       }
-      .padding(.top, 30)
     }
     .ignoresSafeArea()
     .onAppear {
