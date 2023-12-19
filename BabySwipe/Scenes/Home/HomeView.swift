@@ -37,6 +37,7 @@ struct HomeView: View {
   
   var contentView: some View {
     ZStack(alignment: .bottom) {
+      Color.black
       Image("BGImage")
         .resizable()
         .blur(radius: 2.0)
@@ -77,7 +78,7 @@ struct HomeView: View {
       
       ForEach(categories, id: \.title) { category in
         cellWithModifier(for: category)
-          .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 250 : 180)
+          .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 400 : 180)
           .padding(.vertical, isIpad ? 50 : 16)
 
       }

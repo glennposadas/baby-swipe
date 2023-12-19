@@ -44,7 +44,7 @@ class InterstitialController: NSObject, GADFullScreenContentDelegate, Observable
   // Display InterstitialAd
   func displayInterstitialAd() {
     // TODO:
-    guard let root = UIApplication.shared.windows.last?.rootViewController else {
+    guard let root = UIApplication.shared.keyWindow?.rootViewController else {
       return
     }
     if let add = interstitialAd{

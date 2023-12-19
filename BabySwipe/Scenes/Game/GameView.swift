@@ -86,6 +86,10 @@ struct GameView: View {
           }
           .padding(.bottom, 50)
           
+          Rectangle()
+            .frame(height: 100)
+            .foregroundColor(Color.red)
+          
           Spacer()
         }
       }
