@@ -38,6 +38,13 @@
 		456EA5912AF38405003D7030 /* char3.json in Resources */ = {isa = PBXBuildFile; fileRef = 456EA58D2AF38405003D7030 /* char3.json */; };
 		456EA5922AF38405003D7030 /* char2.json in Resources */ = {isa = PBXBuildFile; fileRef = 456EA58E2AF38405003D7030 /* char2.json */; };
 		456EA5932AF38405003D7030 /* char4.json in Resources */ = {isa = PBXBuildFile; fileRef = 456EA58F2AF38405003D7030 /* char4.json */; };
+		4593B2302B3FAF400057C1E9 /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B22F2B3FAF400057C1E9 /* ReceiptParser */; };
+		4593B2322B3FAF400057C1E9 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2312B3FAF400057C1E9 /* RevenueCat */; };
+		4593B2342B3FAF400057C1E9 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2332B3FAF400057C1E9 /* RevenueCatUI */; };
+		4593B2362B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2352B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation */; };
+		4593B2382B3FBB940057C1E9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4593B2372B3FBB940057C1E9 /* StoreKit.framework */; };
+		4593B23D2B3FBCDC0057C1E9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4593B23C2B3FBCDC0057C1E9 /* .gitignore */; };
+		4593B23F2B3FBDF60057C1E9 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593B23E2B3FBDF60057C1E9 /* AppKeys.swift */; };
 		45ABD6402AF8827500C4AD1F /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABD63F2AF8827500C4AD1F /* Swipeable.swift */; };
 		45ABD6422AF882E600C4AD1F /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABD6412AF882E600C4AD1F /* Letter.swift */; };
 		45ABD6442AF89AED00C4AD1F /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABD6432AF89AED00C4AD1F /* Number.swift */; };
@@ -93,6 +100,13 @@
 		456EA58D2AF38405003D7030 /* char3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char3.json; sourceTree = "<group>"; };
 		456EA58E2AF38405003D7030 /* char2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char2.json; sourceTree = "<group>"; };
 		456EA58F2AF38405003D7030 /* char4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = char4.json; sourceTree = "<group>"; };
+		4593B2282B3CBF9B0057C1E9 /* AuthKey_L9MD48H6DC.p8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AuthKey_L9MD48H6DC.p8; sourceTree = "<group>"; };
+		4593B22A2B3CC03F0057C1E9 /* SubscriptionKey_7MRMX536TA.p8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SubscriptionKey_7MRMX536TA.p8; sourceTree = "<group>"; };
+		4593B22C2B3CC2440057C1E9 /* AuthKey_3CJYQC7JZN-AppStoreConnect_API.p8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AuthKey_3CJYQC7JZN-AppStoreConnect_API.p8"; sourceTree = "<group>"; };
+		4593B2372B3FBB940057C1E9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4593B2392B3FBC940057C1E9 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		4593B23C2B3FBCDC0057C1E9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4593B23E2B3FBDF60057C1E9 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
 		45ABD63F2AF8827500C4AD1F /* Swipeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipeable.swift; sourceTree = "<group>"; };
 		45ABD6412AF882E600C4AD1F /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
 		45ABD6432AF89AED00C4AD1F /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
@@ -127,13 +141,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				456EA5822AF34E09003D7030 /* FirebaseMessaging in Frameworks */,
+				4593B2342B3FAF400057C1E9 /* RevenueCatUI in Frameworks */,
 				456EA5782AF34E09003D7030 /* FirebaseAnalyticsSwift in Frameworks */,
+				4593B2362B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation in Frameworks */,
 				456EA5852AF35364003D7030 /* GoogleMobileAds in Frameworks */,
 				456EA5742AF34E09003D7030 /* FirebaseAnalytics in Frameworks */,
+				4593B2302B3FAF400057C1E9 /* ReceiptParser in Frameworks */,
 				456EA57E2AF34E09003D7030 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				456EA5802AF34E09003D7030 /* FirebaseInstallations in Frameworks */,
 				456EA57A2AF34E09003D7030 /* FirebaseCrashlytics in Frameworks */,
+				4593B2322B3FAF400057C1E9 /* RevenueCat in Frameworks */,
 				456EA5762AF34E09003D7030 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				4593B2382B3FBB940057C1E9 /* StoreKit.framework in Frameworks */,
 				C4814793407DA2628DE8AA4E /* Pods_BabySwipe.framework in Frameworks */,
 				456EA57C2AF34E09003D7030 /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
@@ -194,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				454D19702AF206C9008C205A /* README.md */,
+				4593B23C2B3FBCDC0057C1E9 /* .gitignore */,
 				454E2CD32A8C6F7D00D2FDE0 /* BabySwipe */,
 				454E2CD22A8C6F7D00D2FDE0 /* Products */,
 				AF9DCCFB3E8F88FF57044DC9 /* Pods */,
@@ -213,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				455855B52B03EFA800F3EEF4 /* BabySwipe.entitlements */,
+				4593B23B2B3FBC990057C1E9 /* Keys */,
 				45DD47A52A9555DE0015D06A /* Animations */,
 				45DD47A42A9555CE0015D06A /* App */,
 				45FC92842AF449EF00C085DD /* Models */,
@@ -254,6 +275,18 @@
 				456EA58F2AF38405003D7030 /* char4.json */,
 			);
 			path = Characters;
+			sourceTree = "<group>";
+		};
+		4593B23B2B3FBC990057C1E9 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				4593B22C2B3CC2440057C1E9 /* AuthKey_3CJYQC7JZN-AppStoreConnect_API.p8 */,
+				4593B2282B3CBF9B0057C1E9 /* AuthKey_L9MD48H6DC.p8 */,
+				4593B22A2B3CC03F0057C1E9 /* SubscriptionKey_7MRMX536TA.p8 */,
+				4593B2392B3FBC940057C1E9 /* Keys.plist */,
+				4593B23E2B3FBDF60057C1E9 /* AppKeys.swift */,
+			);
+			path = Keys;
 			sourceTree = "<group>";
 		};
 		45DD47A12A9555B00015D06A /* Utils */ = {
@@ -370,6 +403,7 @@
 		89CECDC2FC9C5B07B0B831C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4593B2372B3FBB940057C1E9 /* StoreKit.framework */,
 				5D64A454EABB92477684DA63 /* Pods_BabySwipe.framework */,
 			);
 			name = Frameworks;
@@ -415,6 +449,10 @@
 				456EA57F2AF34E09003D7030 /* FirebaseInstallations */,
 				456EA5812AF34E09003D7030 /* FirebaseMessaging */,
 				456EA5842AF35364003D7030 /* GoogleMobileAds */,
+				4593B22F2B3FAF400057C1E9 /* ReceiptParser */,
+				4593B2312B3FAF400057C1E9 /* RevenueCat */,
+				4593B2332B3FAF400057C1E9 /* RevenueCatUI */,
+				4593B2352B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation */,
 			);
 			productName = BabiesFirsts;
 			productReference = 454E2CD12A8C6F7D00D2FDE0 /* BabySwipe.app */;
@@ -447,6 +485,7 @@
 			packageReferences = (
 				456EA5722AF34E09003D7030 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				456EA5832AF35364003D7030 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = 454E2CD22A8C6F7D00D2FDE0 /* Products */;
 			projectDirPath = "";
@@ -465,6 +504,7 @@
 				456EA5932AF38405003D7030 /* char4.json in Resources */,
 				456EA5922AF38405003D7030 /* char2.json in Resources */,
 				45FC928E2AF4A70A00C085DD /* char5.json in Resources */,
+				4593B23D2B3FBCDC0057C1E9 /* .gitignore in Resources */,
 				4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */,
 				456EA5902AF38405003D7030 /* char1.json in Resources */,
 				45DD47A02A952D430015D06A /* hello-white.json in Resources */,
@@ -580,6 +620,7 @@
 				45ABD6462AF89BEE00C4AD1F /* Shape.swift in Sources */,
 				454E2CD52A8C6F7D00D2FDE0 /* BabySwipeApp.swift in Sources */,
 				45418DD52AF742FF00EF2C83 /* GameView.swift in Sources */,
+				4593B23F2B3FBDF60057C1E9 /* AppKeys.swift in Sources */,
 				452CE8E22AF7B33F00F1D38E /* CardView.swift in Sources */,
 				45FC92862AF44A0400C085DD /* Category.swift in Sources */,
 			);
@@ -852,6 +893,14 @@
 				minimumVersion = 10.12.0;
 			};
 		};
+		4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.31.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -899,6 +948,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 456EA5832AF35364003D7030 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		4593B22F2B3FAF400057C1E9 /* ReceiptParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = ReceiptParser;
+		};
+		4593B2312B3FAF400057C1E9 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		4593B2332B3FAF400057C1E9 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCatUI;
+		};
+		4593B2352B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat_CustomEntitlementComputation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
