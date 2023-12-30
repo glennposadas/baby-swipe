@@ -14,8 +14,8 @@ struct AdMobRectangleView: View {
   var body: some View {
     ZStack {
       Rectangle()
-        .frame(width: UIScreen.main.bounds.width, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        .background(Color.white)
+        .frame(width: UIScreen.main.bounds.width, height: isIpad ? 110 : 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        .background(Color.black)
         .background(ignoresSafeAreaEdges: .bottom)
       BannerView(viewWidth: 320, adBannerType: adBannerType)
         .frame(width: 320, height: isIpad ? 100 : 50, alignment: .center)

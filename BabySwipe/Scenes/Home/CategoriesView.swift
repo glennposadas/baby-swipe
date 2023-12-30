@@ -1,14 +1,15 @@
 //
-//  HomeView.swift
+//  CategoriesView.swift
 //  BabiesFirsts
 //
 //  Created by Glenn Posadas on 8/23/23.
 //
 
 import Lottie
+import RevenueCat
 import SwiftUI
 
-struct HomeView: View {
+struct CategoriesView: View {
   
   // MARK: -
   // MARK: Properties
@@ -37,6 +38,7 @@ struct HomeView: View {
   
   var contentView: some View {
     ZStack(alignment: .bottom) {
+      Color.black
       Image("BGImage")
         .resizable()
         .blur(radius: 2.0)
@@ -46,7 +48,9 @@ struct HomeView: View {
       
       scrollViewWithModifier()
       
-      AdMobRectangleView(adBannerType: .home)
+      if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+        AdMobRectangleView(adBannerType: .home)
+      }
     }
     .fullScreenCover(isPresented: $presentGame) {
       debugPrint("Dismiss game")
@@ -55,8 +59,11 @@ struct HomeView: View {
       GameView(category: $selectedCategory, cards: [])
     }
     .onAppear {
-      debugPrint("On Appear, home view")
-      interstitialController.loadInterstitialAd()
+      debugPrint("On Appear, categories view")
+      
+      if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+        interstitialController.loadInterstitialAd()
+      }
     }
   }
   
@@ -77,7 +84,7 @@ struct HomeView: View {
       
       ForEach(categories, id: \.title) { category in
         cellWithModifier(for: category)
-          .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 250 : 180)
+          .frame(width: UIScreen.main.bounds.width - (isIpad ? 80 : 30), height: isIpad ? 400 : 180)
           .padding(.vertical, isIpad ? 50 : 16)
 
       }
@@ -111,5 +118,5 @@ struct HomeView: View {
 }
 
 #Preview {
-  HomeView()
+  CategoriesView()
 }

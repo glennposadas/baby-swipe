@@ -27,11 +27,11 @@ struct BabySwipeApp: App {
             }
           }
       } else {
-        IntroView(onPlay: {
+        HomeView(onPlay: {
           play = true
         })
         .fullScreenCover(isPresented: $play, content: {
-          HomeView()
+          CategoriesView()
         })
       }
     }

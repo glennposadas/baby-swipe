@@ -35,3 +35,7 @@ profile
 *.moved-aside
 *.xcworkspace
 DerivedData
+
+# Keys
+Keys.plist
+*.p8
