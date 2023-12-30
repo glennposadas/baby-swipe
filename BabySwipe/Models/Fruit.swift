@@ -5,6 +5,7 @@
 //  Created by Glenn Posadas on 11/6/23.
 //
 
+import RevenueCat
 import SwiftUI
 
 class Fruit: Swipeable {
@@ -13,7 +14,7 @@ class Fruit: Swipeable {
   // MARK: Generator
   
   static func allData() -> [Fruit] {
-    let fruitNames = [
+    var fruitNames = [
       "apple",
       "banana",
       "lemon",
@@ -23,6 +24,22 @@ class Fruit: Swipeable {
       "strawberry",
       "watermelon"
     ]
+    
+    if let allPurchasedProductIdentifiers = Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers,
+       allPurchasedProductIdentifiers.count > 0 {
+      // Premium.
+      fruitNames += [
+        "cherry",
+        "coconut",
+        "durian",
+        "grapes",
+        "guava",
+        "kiwi",
+        "lime",
+        "lychee",
+        "passion-fruit"
+      ]
+    }
     
     let fruits: [Fruit] = fruitNames.map { name in
       return .init(title: name.uppercased(), image: Image(name))
