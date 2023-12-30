@@ -43,7 +43,6 @@
 		4593B2342B3FAF400057C1E9 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2332B3FAF400057C1E9 /* RevenueCatUI */; };
 		4593B2362B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2352B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation */; };
 		4593B2382B3FBB940057C1E9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4593B2372B3FBB940057C1E9 /* StoreKit.framework */; };
-		4593B23D2B3FBCDC0057C1E9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4593B23C2B3FBCDC0057C1E9 /* .gitignore */; };
 		4593B23F2B3FBDF60057C1E9 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593B23E2B3FBDF60057C1E9 /* AppKeys.swift */; };
 		45ABD6402AF8827500C4AD1F /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABD63F2AF8827500C4AD1F /* Swipeable.swift */; };
 		45ABD6422AF882E600C4AD1F /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABD6412AF882E600C4AD1F /* Letter.swift */; };
@@ -504,7 +503,6 @@
 				456EA5932AF38405003D7030 /* char4.json in Resources */,
 				456EA5922AF38405003D7030 /* char2.json in Resources */,
 				45FC928E2AF4A70A00C085DD /* char5.json in Resources */,
-				4593B23D2B3FBCDC0057C1E9 /* .gitignore in Resources */,
 				4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */,
 				456EA5902AF38405003D7030 /* char1.json in Resources */,
 				45DD47A02A952D430015D06A /* hello-white.json in Resources */,

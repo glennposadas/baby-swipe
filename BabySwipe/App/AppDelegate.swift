@@ -23,6 +23,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     let ass = AppKeys.revCatAPIKey
     
     Purchases.logLevel = .debug
+    Purchases.configure(withAPIKey: "", appUserID: "")
     
     print("didFinishLaunchingWithOptions...")
     return true
