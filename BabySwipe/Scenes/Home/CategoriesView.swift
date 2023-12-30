@@ -6,6 +6,7 @@
 //
 
 import Lottie
+import RevenueCat
 import SwiftUI
 
 struct CategoriesView: View {
@@ -47,7 +48,9 @@ struct CategoriesView: View {
       
       scrollViewWithModifier()
       
-      AdMobRectangleView(adBannerType: .home)
+      if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+        AdMobRectangleView(adBannerType: .home)
+      }
     }
     .fullScreenCover(isPresented: $presentGame) {
       debugPrint("Dismiss game")
@@ -56,8 +59,11 @@ struct CategoriesView: View {
       GameView(category: $selectedCategory, cards: [])
     }
     .onAppear {
-      debugPrint("On Appear, home view")
-      interstitialController.loadInterstitialAd()
+      debugPrint("On Appear, categories view")
+      
+      if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+        interstitialController.loadInterstitialAd()
+      }
     }
   }
   

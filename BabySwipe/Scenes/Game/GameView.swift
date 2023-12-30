@@ -6,6 +6,7 @@
 //
 
 import Lottie
+import RevenueCat
 import SwiftUI
 
 typealias Card = CardView<CardContainerView>
@@ -106,7 +107,9 @@ struct GameView: View {
       }
       
       // Ads
-      AdMobRectangleView(adBannerType: .game)
+      if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+        AdMobRectangleView(adBannerType: .game)
+      }
     }
   }
   
