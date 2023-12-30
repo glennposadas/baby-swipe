@@ -4,4 +4,5 @@ target 'BabySwipe' do
   use_frameworks!
   
   pod 'lottie-ios', :git => 'https://github.com/airbnb/lottie-ios', :branch => 'master'
+  pod 'RevenueCat'
 end

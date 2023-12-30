@@ -38,10 +38,6 @@
 		456EA5912AF38405003D7030 /* char3.json in Resources */ = {isa = PBXBuildFile; fileRef = 456EA58D2AF38405003D7030 /* char3.json */; };
 		456EA5922AF38405003D7030 /* char2.json in Resources */ = {isa = PBXBuildFile; fileRef = 456EA58E2AF38405003D7030 /* char2.json */; };
 		456EA5932AF38405003D7030 /* char4.json in Resources */ = {isa = PBXBuildFile; fileRef = 456EA58F2AF38405003D7030 /* char4.json */; };
-		4593B2302B3FAF400057C1E9 /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B22F2B3FAF400057C1E9 /* ReceiptParser */; };
-		4593B2322B3FAF400057C1E9 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2312B3FAF400057C1E9 /* RevenueCat */; };
-		4593B2342B3FAF400057C1E9 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2332B3FAF400057C1E9 /* RevenueCatUI */; };
-		4593B2362B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation in Frameworks */ = {isa = PBXBuildFile; productRef = 4593B2352B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation */; };
 		4593B2382B3FBB940057C1E9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4593B2372B3FBB940057C1E9 /* StoreKit.framework */; };
 		4593B23F2B3FBDF60057C1E9 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593B23E2B3FBDF60057C1E9 /* AppKeys.swift */; };
 		45ABD6402AF8827500C4AD1F /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABD63F2AF8827500C4AD1F /* Swipeable.swift */; };
@@ -140,16 +136,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				456EA5822AF34E09003D7030 /* FirebaseMessaging in Frameworks */,
-				4593B2342B3FAF400057C1E9 /* RevenueCatUI in Frameworks */,
 				456EA5782AF34E09003D7030 /* FirebaseAnalyticsSwift in Frameworks */,
-				4593B2362B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation in Frameworks */,
 				456EA5852AF35364003D7030 /* GoogleMobileAds in Frameworks */,
 				456EA5742AF34E09003D7030 /* FirebaseAnalytics in Frameworks */,
-				4593B2302B3FAF400057C1E9 /* ReceiptParser in Frameworks */,
 				456EA57E2AF34E09003D7030 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				456EA5802AF34E09003D7030 /* FirebaseInstallations in Frameworks */,
 				456EA57A2AF34E09003D7030 /* FirebaseCrashlytics in Frameworks */,
-				4593B2322B3FAF400057C1E9 /* RevenueCat in Frameworks */,
 				456EA5762AF34E09003D7030 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				4593B2382B3FBB940057C1E9 /* StoreKit.framework in Frameworks */,
 				C4814793407DA2628DE8AA4E /* Pods_BabySwipe.framework in Frameworks */,
@@ -448,10 +440,6 @@
 				456EA57F2AF34E09003D7030 /* FirebaseInstallations */,
 				456EA5812AF34E09003D7030 /* FirebaseMessaging */,
 				456EA5842AF35364003D7030 /* GoogleMobileAds */,
-				4593B22F2B3FAF400057C1E9 /* ReceiptParser */,
-				4593B2312B3FAF400057C1E9 /* RevenueCat */,
-				4593B2332B3FAF400057C1E9 /* RevenueCatUI */,
-				4593B2352B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation */,
 			);
 			productName = BabiesFirsts;
 			productReference = 454E2CD12A8C6F7D00D2FDE0 /* BabySwipe.app */;
@@ -484,7 +472,6 @@
 			packageReferences = (
 				456EA5722AF34E09003D7030 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				456EA5832AF35364003D7030 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
-				4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = 454E2CD22A8C6F7D00D2FDE0 /* Products */;
 			projectDirPath = "";
@@ -891,14 +878,6 @@
 				minimumVersion = 10.12.0;
 			};
 		};
-		4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.31.6;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -946,26 +925,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 456EA5832AF35364003D7030 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
-		};
-		4593B22F2B3FAF400057C1E9 /* ReceiptParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = ReceiptParser;
-		};
-		4593B2312B3FAF400057C1E9 /* RevenueCat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = RevenueCat;
-		};
-		4593B2332B3FAF400057C1E9 /* RevenueCatUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = RevenueCatUI;
-		};
-		4593B2352B3FAF400057C1E9 /* RevenueCat_CustomEntitlementComputation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4593B22E2B3FAF400057C1E9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = RevenueCat_CustomEntitlementComputation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,8 +1,14 @@
 PODS:
   - lottie-ios (4.3.3)
+  - RevenueCat (4.25.2)
 
 DEPENDENCIES:
   - lottie-ios (from `https://github.com/airbnb/lottie-ios`, branch `master`)
+  - RevenueCat
+
+SPEC REPOS:
+  trunk:
+    - RevenueCat
 
 EXTERNAL SOURCES:
   lottie-ios:
@@ -16,7 +22,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   lottie-ios: 16e4b4d2d9fa132b6b3c6b7e37aae6fa86da66fd
+  RevenueCat: 3997b7af3ded18a59346e76f1365cae5a64f4281
 
-PODFILE CHECKSUM: 49faa6ab48898d99686b789e2e67c009f61cb342
+PODFILE CHECKSUM: fd99a04abdb8d9bc01e27c79cbebce6f3c7cbec9
 
 COCOAPODS: 1.12.1
