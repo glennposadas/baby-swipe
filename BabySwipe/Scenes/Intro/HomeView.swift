@@ -1,14 +1,16 @@
 //
-//  IntroView.swift
+//  HomeView.swift
 //  BabySwipe
 //
 //  Created by Glenn Posadas on 11/3/23.
 //
 
 import Lottie
+import RevenueCat
+import RevenueCatUI
 import SwiftUI
 
-struct IntroView: View {
+struct HomeView: View {
   
   // MARK: -
   // MARK: Properties
@@ -114,8 +116,17 @@ struct IntroView: View {
           
           Spacer()
         }
-
+        
       }
+    }
+    .presentPaywallIfNeeded { customerInfo in
+      // Returning `true` will present the paywall
+      return customerInfo.entitlements.active.isEmpty
+    } purchaseCompleted: { customerInfo in
+      debugPrint("Purchase completed: \(customerInfo.entitlements)")
+    } restoreCompleted: { customerInfo in
+      // Paywall will be dismissed automatically if "pro" is now active.
+      debugPrint("Purchases restored: \(customerInfo.entitlements)")
     }
     .onAppear {
       playBGMusic()
@@ -132,5 +143,5 @@ struct IntroView: View {
 }
 
 #Preview {
-  IntroView()
+  HomeView()
 }

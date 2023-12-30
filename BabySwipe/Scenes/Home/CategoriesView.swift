@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  CategoriesView.swift
 //  BabiesFirsts
 //
 //  Created by Glenn Posadas on 8/23/23.
@@ -8,7 +8,7 @@
 import Lottie
 import SwiftUI
 
-struct HomeView: View {
+struct CategoriesView: View {
   
   // MARK: -
   // MARK: Properties
@@ -112,5 +112,5 @@ struct HomeView: View {
 }
 
 #Preview {
-  HomeView()
+  CategoriesView()
 }

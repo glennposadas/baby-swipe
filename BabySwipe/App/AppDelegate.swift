@@ -19,13 +19,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     FirebaseApp.configure()
     
     GADMobileAds.sharedInstance().start(completionHandler: nil)
-    
-    let ass = AppKeys.revCatAPIKey
-    
+        
     Purchases.logLevel = .debug
-    Purchases.configure(withAPIKey: "", appUserID: "")
+    Purchases.configure(withAPIKey: AppKeys.revCatAPIKey, appUserID: AppKeys.revCatAppId)
     
-    print("didFinishLaunchingWithOptions...")
+    debugPrint("didFinishLaunchingWithOptions...")
     return true
   }
   
