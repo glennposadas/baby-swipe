@@ -182,10 +182,18 @@
 		453893CF2B431BDC00BAD626 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				453893D42B43493000BAD626 /* About */,
 				453893D02B431BE900BAD626 /* SettingsView.swift */,
 				453893D22B431CA700BAD626 /* SettingsRowType.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		453893D42B43493000BAD626 /* About */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 		453BB9572A923F090014E569 /* Lottie Animation Files */ = {
