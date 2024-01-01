@@ -297,8 +297,8 @@
 				45418DCC2AF65FDE00EF2C83 /* Ads */,
 				45418DC72AF63C6900EF2C83 /* Base */,
 				45418DD32AF742F100EF2C83 /* Game */,
-				45DD47A72A9556000015D06A /* Home */,
-				45FC92892AF44B7F00C085DD /* Intro */,
+				45DD47A72A9556000015D06A /* Categories */,
+				45FC92892AF44B7F00C085DD /* Home */,
 				45DD47A62A9555FA0015D06A /* Splash */,
 			);
 			path = Scenes;
@@ -341,13 +341,13 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		45DD47A72A9556000015D06A /* Home */ = {
+		45DD47A72A9556000015D06A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				45DD47A82A9556480015D06A /* CategoriesView.swift */,
 				45FC92A02AF5252A00C085DD /* Cell.swift */,
 			);
-			path = Home;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		45FC92842AF449EF00C085DD /* Models */ = {
@@ -365,13 +365,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		45FC92892AF44B7F00C085DD /* Intro */ = {
+		45FC92892AF44B7F00C085DD /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				45FC92872AF44B7C00C085DD /* HomeView.swift */,
 				45FC92902AF4A7A900C085DD /* AnimatedCharacterView.swift */,
 			);
-			path = Intro;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		45FC92942AF4AC0800C085DD /* Fonts */ = {
