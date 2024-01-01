@@ -11,6 +11,7 @@ import SwiftUI
 enum AdBannerType: String {
   case home = "ca-app-pub-7352177825579783/9110602674"
   case game = "ca-app-pub-7352177825579783/6715377773"
+  case settings = "ca-app-pub-7352177825579783/8661090620"
   case test = "ca-app-pub-3940256099942544/2934735716"
 }
 

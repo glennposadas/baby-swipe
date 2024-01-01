@@ -16,6 +16,7 @@ struct HomeView: View {
   // MARK: Properties
   
   @State private var isAnimating = false
+  @State private var presentSettings = false
   
   @AppStorage("mainSoundSettingIsOn") var mainSoundSettingIsOn = false
   
@@ -97,20 +98,16 @@ struct HomeView: View {
                   .fill(Color.bgColor)
                   .frame(width: 50, height: 50)
                   .overlay(
-                    Image(systemName: mainSoundSettingIsOn ? "speaker.wave.1.fill" : "speaker.slash.fill")
+                    Image(systemName: "gearshape.circle.fill")
                       .font(.largeTitle)
                       .foregroundColor(.white)
                       .aspectRatio(contentMode: .fill)
-                  )
-                  .overlay(
-                    RoundedRectangle(cornerRadius: 30)
-                      .stroke(Color.white, lineWidth: 2)
                   )
               }
             }
             .buttonStyle(BorderlessButtonStyle())
             .padding(.trailing, 16)
-            .padding(.top, 16)
+            .padding(.top, 8)
           }
           .padding(.top, 30)
           
@@ -120,12 +117,10 @@ struct HomeView: View {
       }
     }
     .presentPaywallIfNeeded { customerInfo in
-      // Returning `true` will present the paywall
       return customerInfo.entitlements.active.isEmpty
     } purchaseCompleted: { customerInfo in
       debugPrint("Purchase completed: \(customerInfo.entitlements)")
     } restoreCompleted: { customerInfo in
-      // Paywall will be dismissed automatically if "pro" is now active.
       debugPrint("Purchases restored: \(customerInfo.entitlements)")
     }
     .onAppear {

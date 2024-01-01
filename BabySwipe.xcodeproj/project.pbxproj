@@ -10,6 +10,8 @@
 		4502240C2B3FE68E0092C445 /* AppKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4593B2392B3FBC940057C1E9 /* AppKeys.plist */; };
 		452CE8E22AF7B33F00F1D38E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CE8E12AF7B33F00F1D38E /* CardView.swift */; };
 		452CE8E42AF7B39000F1D38E /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CE8E32AF7B39000F1D38E /* CardContainerView.swift */; };
+		453893D12B431BE900BAD626 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453893D02B431BE900BAD626 /* SettingsView.swift */; };
+		453893D32B431CA700BAD626 /* SettingsRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453893D22B431CA700BAD626 /* SettingsRowType.swift */; };
 		4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 4538D9602A92BB0C008D6CBA /* wave-hand.json */; };
 		45418DC92AF63C7800EF2C83 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DC82AF63C7800EF2C83 /* NavBarView.swift */; };
 		45418DCB2AF63D3F00EF2C83 /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCA2AF63D3F00EF2C83 /* Color+App.swift */; };
@@ -72,6 +74,8 @@
 		3EEBED597EB79ECBB2222159 /* Pods-BabySwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySwipe.debug.xcconfig"; path = "Target Support Files/Pods-BabySwipe/Pods-BabySwipe.debug.xcconfig"; sourceTree = "<group>"; };
 		452CE8E12AF7B33F00F1D38E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		452CE8E32AF7B39000F1D38E /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
+		453893D02B431BE900BAD626 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		453893D22B431CA700BAD626 /* SettingsRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowType.swift; sourceTree = "<group>"; };
 		4538D9602A92BB0C008D6CBA /* wave-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wave-hand.json"; sourceTree = "<group>"; };
 		45418DC82AF63C7800EF2C83 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		45418DCA2AF63D3F00EF2C83 /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
@@ -173,6 +177,15 @@
 				452CE8E32AF7B39000F1D38E /* CardContainerView.swift */,
 			);
 			path = Swipe;
+			sourceTree = "<group>";
+		};
+		453893CF2B431BDC00BAD626 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				453893D02B431BE900BAD626 /* SettingsView.swift */,
+				453893D22B431CA700BAD626 /* SettingsRowType.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		453BB9572A923F090014E569 /* Lottie Animation Files */ = {
@@ -296,9 +309,10 @@
 			children = (
 				45418DCC2AF65FDE00EF2C83 /* Ads */,
 				45418DC72AF63C6900EF2C83 /* Base */,
-				45418DD32AF742F100EF2C83 /* Game */,
 				45DD47A72A9556000015D06A /* Categories */,
+				45418DD32AF742F100EF2C83 /* Game */,
 				45FC92892AF44B7F00C085DD /* Home */,
+				453893CF2B431BDC00BAD626 /* Settings */,
 				45DD47A62A9555FA0015D06A /* Splash */,
 			);
 			path = Scenes;
@@ -583,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45ABD64A2AF8A06800C4AD1F /* Fruit.swift in Sources */,
+				453893D32B431CA700BAD626 /* SettingsRowType.swift in Sources */,
 				45DD47A92A9556480015D06A /* CategoriesView.swift in Sources */,
 				452CE8E42AF7B39000F1D38E /* CardContainerView.swift in Sources */,
 				45ABD6482AF8A00E00C4AD1F /* Colour.swift in Sources */,
@@ -600,6 +615,7 @@
 				456EA5712AF34908003D7030 /* AppDelegate.swift in Sources */,
 				45C19F2B2AFA5050000117A4 /* Animal.swift in Sources */,
 				45FC92962AF4F1CF00C085DD /* SFX.swift in Sources */,
+				453893D12B431BE900BAD626 /* SettingsView.swift in Sources */,
 				45FC92A12AF5252A00C085DD /* Cell.swift in Sources */,
 				45418DD22AF6613B00EF2C83 /* AdTypes.swift in Sources */,
 				45ABD6402AF8827500C4AD1F /* Swipeable.swift in Sources */,
