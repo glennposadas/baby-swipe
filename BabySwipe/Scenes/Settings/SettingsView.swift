@@ -18,6 +18,7 @@ struct SettingsView: View {
   
   @State private var presentAbout: Bool = false
   @State private var presentPaywall: Bool = false
+  @State private var isPremium: Bool = false
   
   // MARK: -
   // MARK: Body
@@ -39,7 +40,7 @@ struct SettingsView: View {
               
             }
           
-          if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+          if !isPremium {
             SettingsRowView(rowType: .goPremium)
               .onTapGesture {
                 presentPaywall.toggle()
@@ -51,7 +52,7 @@ struct SettingsView: View {
             }
         }
         
-        if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+        if !isPremium {
           AdMobRectangleView(adBannerType: .settings)
         }
       }
@@ -62,6 +63,16 @@ struct SettingsView: View {
       PaywallView(displayCloseButton: true)
     })
     .fullScreenCover(isPresented: $presentAbout, content: AboutView.init)
+    .onAppear(perform: {
+      Purchases.shared.getCustomerInfo { customerInfo, error in
+        if let allPurchasedProductIdentifiersCount = customerInfo?.allPurchasedProductIdentifiers.count,
+           allPurchasedProductIdentifiersCount > 0 {
+          isPremium = true
+        } else {
+          isPremium = false
+        }
+      }
+    })
   }
   
   var closeButton: some View {
