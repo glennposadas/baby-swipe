@@ -38,4 +38,5 @@ DerivedData
 
 # Keys
 Keys.plist
+GoogleService-Info.plist
 *.p8

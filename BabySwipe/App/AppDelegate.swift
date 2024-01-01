@@ -23,8 +23,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     Purchases.logLevel = .debug
     Purchases.configure(withAPIKey: AppKeys.revCatAPIKey, appUserID: AppKeys.revCatAppId)
     
-    
-    
     if let rootViewController = UIApplication.shared.keyWindow?.rootViewController,
        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
       
@@ -32,7 +30,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
       
       windowScene.requestGeometryUpdate(.iOS(interfaceOrientations: .portrait))
     }
-    
     
     debugPrint("didFinishLaunchingWithOptions...")
     return true
