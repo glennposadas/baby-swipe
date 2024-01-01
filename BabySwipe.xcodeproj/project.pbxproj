@@ -88,7 +88,7 @@
 		455855B52B03EFA800F3EEF4 /* BabySwipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabySwipe.entitlements; sourceTree = "<group>"; };
 		455855B62B03F1C200F3EEF4 /* InterstitialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialController.swift; sourceTree = "<group>"; };
 		455855B82B03F26D00F3EEF4 /* UIApplication+KeyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+KeyWindow.swift"; sourceTree = "<group>"; };
-		456EA56F2AF3464D003D7030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		456EA56F2AF3464D003D7030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../Plists/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		456EA5702AF34908003D7030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456EA5882AF35AE9003D7030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		456EA5892AF3735A003D7030 /* clouds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clouds.json; sourceTree = "<group>"; };
@@ -159,6 +159,7 @@
 				4593B22C2B3CC2440057C1E9 /* AuthKey_3CJYQC7JZN-AppStoreConnect_API.p8 */,
 				4593B2282B3CBF9B0057C1E9 /* AuthKey_L9MD48H6DC.p8 */,
 				4593B22A2B3CC03F0057C1E9 /* SubscriptionKey_7MRMX536TA.p8 */,
+				456EA56F2AF3464D003D7030 /* GoogleService-Info.plist */,
 				4593B2392B3FBC940057C1E9 /* AppKeys.plist */,
 				4593B23E2B3FBDF60057C1E9 /* AppKeys.swift */,
 			);
@@ -242,7 +243,6 @@
 				45DD47A52A9555DE0015D06A /* Animations */,
 				45DD47A42A9555CE0015D06A /* App */,
 				45FC92842AF449EF00C085DD /* Models */,
-				456EA56E2AF3463B003D7030 /* Plists */,
 				454E2CDA2A8C6F7E00D2FDE0 /* Preview Content */,
 				45DD47A32A9555CA0015D06A /* Resources */,
 				45DD47A22A9555C00015D06A /* Scenes */,
@@ -257,15 +257,6 @@
 				454E2CDB2A8C6F7E00D2FDE0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		456EA56E2AF3463B003D7030 /* Plists */ = {
-			isa = PBXGroup;
-			children = (
-				456EA5882AF35AE9003D7030 /* Info.plist */,
-				456EA56F2AF3464D003D7030 /* GoogleService-Info.plist */,
-			);
-			path = Plists;
 			sourceTree = "<group>";
 		};
 		456EA58B2AF383F8003D7030 /* Characters */ = {
@@ -328,6 +319,7 @@
 			children = (
 				454E2CD42A8C6F7D00D2FDE0 /* BabySwipeApp.swift */,
 				456EA5702AF34908003D7030 /* AppDelegate.swift */,
+				456EA5882AF35AE9003D7030 /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -751,7 +743,7 @@
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BabySwipe/Plists/Info.plist;
+				INFOPLIST_FILE = BabySwipe/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Baby Swipe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -806,7 +798,7 @@
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BabySwipe/Plists/Info.plist;
+				INFOPLIST_FILE = BabySwipe/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Baby Swipe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
