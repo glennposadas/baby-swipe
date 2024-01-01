@@ -115,7 +115,7 @@ struct HomeView: View {
         
       }
     }
-    .sheet(isPresented: $presentSettings, content: SettingsView.init)
+    .fullScreenCover(isPresented: $presentSettings, content: SettingsView.init)
     .presentPaywallIfNeeded { customerInfo in
       return customerInfo.entitlements.active.isEmpty
     } purchaseCompleted: { customerInfo in

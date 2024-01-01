@@ -106,7 +106,6 @@ struct GameView: View {
         )
       }
       
-      // Ads
       if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
         AdMobRectangleView(adBannerType: .game)
       }

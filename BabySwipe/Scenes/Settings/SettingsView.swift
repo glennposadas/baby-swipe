@@ -14,6 +14,8 @@ struct SettingsView: View {
   // MARK: -
   // MARK: Properties
   
+  @Environment(\.dismiss) var dismiss
+  
   @State private var presentAbout: Bool = false
   @State private var presentPaywall: Bool = false
   
@@ -36,24 +38,39 @@ struct SettingsView: View {
             .onTapGesture {
               
             }
-          SettingsRowView(rowType: .goPremium)
-            .onTapGesture {
-              presentPaywall.toggle()
-            }
+          
+          if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+            SettingsRowView(rowType: .goPremium)
+              .onTapGesture {
+                presentPaywall.toggle()
+              }
+          }
           SettingsRowView(rowType: .about)
             .onTapGesture {
               presentAbout.toggle()
             }
         }
         
-        AdMobRectangleView(adBannerType: .settings)
+        if Purchases.shared.cachedCustomerInfo?.allPurchasedProductIdentifiers.count == 0 {
+          AdMobRectangleView(adBannerType: .settings)
+        }
       }
     }
     .navigationTitle("Settings")
+    .navigationBarItems(trailing: closeButton)
     .fullScreenCover(isPresented: $presentPaywall, content: {
       PaywallView(displayCloseButton: true)
     })
     .fullScreenCover(isPresented: $presentAbout, content: AboutView.init)
+  }
+  
+  var closeButton: some View {
+    Button(action: {
+      dismiss()
+    }) {
+      Image(systemName: "xmark.circle.fill")
+        .foregroundColor(.black)
+    }
   }
 }
 
