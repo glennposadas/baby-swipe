@@ -53,7 +53,7 @@ struct SettingsView: View {
     .fullScreenCover(isPresented: $presentPaywall, content: {
       PaywallView(displayCloseButton: true)
     })
-//    .fullScreenCover(isPresented: $presentAbout, content: AboutView.init)
+    .fullScreenCover(isPresented: $presentAbout, content: AboutView.init)
   }
 }
 

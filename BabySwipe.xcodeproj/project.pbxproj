@@ -12,6 +12,7 @@
 		452CE8E42AF7B39000F1D38E /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452CE8E32AF7B39000F1D38E /* CardContainerView.swift */; };
 		453893D12B431BE900BAD626 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453893D02B431BE900BAD626 /* SettingsView.swift */; };
 		453893D32B431CA700BAD626 /* SettingsRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453893D22B431CA700BAD626 /* SettingsRowType.swift */; };
+		453893D62B434B8200BAD626 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453893D52B434B8200BAD626 /* AboutView.swift */; };
 		4538D9622A92BB0C008D6CBA /* wave-hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 4538D9602A92BB0C008D6CBA /* wave-hand.json */; };
 		45418DC92AF63C7800EF2C83 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DC82AF63C7800EF2C83 /* NavBarView.swift */; };
 		45418DCB2AF63D3F00EF2C83 /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45418DCA2AF63D3F00EF2C83 /* Color+App.swift */; };
@@ -76,6 +77,7 @@
 		452CE8E32AF7B39000F1D38E /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
 		453893D02B431BE900BAD626 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		453893D22B431CA700BAD626 /* SettingsRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowType.swift; sourceTree = "<group>"; };
+		453893D52B434B8200BAD626 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		4538D9602A92BB0C008D6CBA /* wave-hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wave-hand.json"; sourceTree = "<group>"; };
 		45418DC82AF63C7800EF2C83 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		45418DCA2AF63D3F00EF2C83 /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		453893D42B43493000BAD626 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				453893D52B434B8200BAD626 /* AboutView.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45ABD64A2AF8A06800C4AD1F /* Fruit.swift in Sources */,
+				453893D62B434B8200BAD626 /* AboutView.swift in Sources */,
 				453893D32B431CA700BAD626 /* SettingsRowType.swift in Sources */,
 				45DD47A92A9556480015D06A /* CategoriesView.swift in Sources */,
 				452CE8E42AF7B39000F1D38E /* CardContainerView.swift in Sources */,
@@ -762,7 +766,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BabySwipe/BabySwipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"BabySwipe/Preview Content\"";
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				ENABLE_PREVIEWS = YES;
@@ -817,7 +821,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BabySwipe/BabySwipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"BabySwipe/Preview Content\"";
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				ENABLE_PREVIEWS = YES;

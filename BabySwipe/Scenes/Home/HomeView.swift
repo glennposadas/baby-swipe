@@ -18,7 +18,7 @@ struct HomeView: View {
   @State private var isAnimating = false
   @State private var presentSettings = false
   
-  @AppStorage("mainSoundSettingIsOn") var mainSoundSettingIsOn = false
+  @AppStorage("playMusicIsOn") var playMusicIsOn = false
   
   var onPlay: (() -> Void)?
   
@@ -90,8 +90,7 @@ struct HomeView: View {
             Spacer()
             
             Button(action: {
-              mainSoundSettingIsOn.toggle()
-              playBGMusic()
+              presentSettings = true
             }) {
               ZStack {
                 Circle()
@@ -116,6 +115,7 @@ struct HomeView: View {
         
       }
     }
+    .sheet(isPresented: $presentSettings, content: SettingsView.init)
     .presentPaywallIfNeeded { customerInfo in
       return customerInfo.entitlements.active.isEmpty
     } purchaseCompleted: { customerInfo in
@@ -133,7 +133,7 @@ struct HomeView: View {
   // MARK: Functions
   
   private func playBGMusic() {
-    mainSoundSettingIsOn ? SFX.shared.playMusic(.bgMusic) : SFX.shared.stopCurrentMusic()
+    playMusicIsOn ? SFX.shared.playMusic(.bgMusic) : SFX.shared.stopCurrentMusic()
   }
 }
 
